@@ -59,69 +59,19 @@
     </div>
 
     <div class="container">
-
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <h1>Pinta: Painting Made Simple</h1>
-        <p>Pinta is a free, open source drawing/editing program modeled after <a href="http://getpaint.net">Paint.NET</a>. Its goal is to provide users with a simple yet powerful way to draw and manipulate images on Linux, Mac, and Windows. </p>
-        <p><a href="download.html" class="btn btn-primary btn-large">Download now &raquo;</a></p>
-      </div>
       
      <div class="row">
-        <div class="span4">
-         <img src="images/ss1-800.jpg" class="img-polaroid">
-        </div>
-        <div class="span4">
-          <img src="images/ss2-800.jpg" class="img-polaroid">
+        <div class="span8">
+          <ul>
+            {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
         </div>
         <div class="span4">
           <img src="images/ss4-800.jpg" class="img-polaroid">
-        </div>
-      </div>
-      <div class="row">
-        <div class="span4">
-          <h2>Drawing Tools</h2>
-          <div class="row">
-            <div class="span1"><img src="images/tools64.png" alt="Tools" height="64" width="64" /></div>
-            <div class="span3">Use easy drawing tools to draw freehand, lines, rectangles, ellipses, and more.</div>
-          </div>
-        </div>
-        <div class="span4">
-          <h2>Full History</h2>
-          <div class="row">
-            <div class="span1"><img src="images/history.png" alt="Tools" height="64" width="64" /></div>
-            <div class="span3">Don't be afraid to experiment, Pinta tracks your full history so you can always undo.</div>
-          </div>
-        </div>
-        <div class="span4">
-          <h2>Unlimited Layers</h2>
-          <div class="row">
-            <div class="span1"><img src="images/layers.png" alt="Tools" height="64" width="64" /></div>
-            <div class="span3">Use layers to help separate and group elements of your image for easy editing.</div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span4">
-          <h2>Adjustments and Effects</h2>
-          <div class="row">
-            <div class="span1"><img src="images/adjustments.png" alt="Tools" height="64" width="64" /></div>
-            <div class="span3">Pinta includes over 35 adjustments and effects for tweaking your images.</div>
-          </div>
-        </div>
-        <div class="span4">
-          <h2>Bi-Tri-Quad-Lingual</h2>
-          <div class="row">
-            <div class="span1"><img src="images/multilingual.png" alt="Tools" height="64" width="64" /></div>
-            <div class="span3">Use Pinta in your language. Pinta is at least partially translated into over 55 languages.</div>
-          </div>
-        </div>
-        <div class="span4">
-          <h2>Endlessly Extensible</h2>
-          <div class="row">
-             <div class="span1"><img src="images/workspace.png" alt="Tools" height="64" width="64" /></div>
-            <div class="span3">Pinta can be extended in every way by downloading new add-ins. All inside Pinta, without any manual installing!</div>
-          </div>
         </div>
       </div>
 

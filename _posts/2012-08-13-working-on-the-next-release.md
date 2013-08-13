@@ -1,5 +1,5 @@
 ---
-title: New website!
+title: Progress towards Pinta 1.5
 ---
 
 Progress towards Pinta 1.5

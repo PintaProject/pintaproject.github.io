@@ -64,11 +64,9 @@
       
      {% for post in site.posts %}
      <div class="row">
-        <div class="span8">
+        <div class="span12">
+          <p>{{post.date}}</p>
          {{post.content}}
-        </div>
-        <div class="span4">
-          <img src="images/ss4-800.jpg" class="img-polaroid">
         </div>
       </div>
       {% endfor %}

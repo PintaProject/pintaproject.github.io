@@ -2,7 +2,7 @@
 title: New website!
 ---
 
-New Website
+Progress towards Pinta 1.5
 ===========
 
-This is the new website, it's going to be totally awesome! This is placeholder news while we work on the content, but it's pretty neat all the same.
+We are actually almost finished with Pinta 1.5, and this new website is part of that process. All we need now is some domain name configuration and some polishing of bugs (plus maybe a new GTK# release on Windows) and we are golden.

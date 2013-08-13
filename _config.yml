@@ -4,5 +4,5 @@ release:
   osXUrl: https://github.com/downloads/PintaProject/Pinta/pinta-1.4.app.zip
   tarballUrl: https://github.com/downloads/PintaProject/Pinta/pinta-1.4.tar.gz
   zipUrl: https://github.com/downloads/PintaProject/Pinta/pinta-1.4.zip
-  releasNotesUrl: https://github.com/PintaProject/Pinta/commits/master
+  releaseNotesUrl: https://github.com/PintaProject/Pinta/commits/master
   

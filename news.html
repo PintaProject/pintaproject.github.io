@@ -62,20 +62,16 @@
 
     <div class="container">
       
+     {% for post in site.posts %}
      <div class="row">
         <div class="span8">
-          <ul>
-            {% for post in site.posts %}
-            <li>
-              {{post.content}}
-            </li>
-            {% endfor %}
-          </ul>
+         {{post.content}}
         </div>
         <div class="span4">
           <img src="images/ss4-800.jpg" class="img-polaroid">
         </div>
       </div>
+      {% endfor %}
 
       <hr>
 

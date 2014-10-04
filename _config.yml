@@ -1,7 +1,7 @@
 release:
-  version: 1.4
-  windowsUrl: https://github.com/downloads/PintaProject/Pinta/pinta-1.4.msi
-  osXUrl: https://github.com/downloads/PintaProject/Pinta/pinta-1.4.app.zip
-  tarballUrl: https://github.com/downloads/PintaProject/Pinta/pinta-1.4.tar.gz
-  zipUrl: https://github.com/downloads/PintaProject/Pinta/pinta-1.4.zip
+  version: 1.5
+  windowsUrl: https://github.com/PintaProject/Pinta/releases/download/1.5/pinta-1.5.exe
+  osXUrl: https://github.com/PintaProject/Pinta/releases/download/1.5/Pinta.app.zip
+  tarballUrl: https://github.com/PintaProject/Pinta/releases/download/1.5/pinta-1.5.tar.gz
+  zipUrl: https://github.com/PintaProject/Pinta/releases/download/1.5/pinta-1.5.zip
   releaseNotesUrl: https://github.com/PintaProject/Pinta/releases

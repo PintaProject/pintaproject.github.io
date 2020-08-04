@@ -1,10 +1,10 @@
 release:
-  version: 1.6
-  release_notes: /releases/1-6
-  download_tarball: https://github.com/PintaProject/Pinta/releases/download/1.6/pinta-1.6.tar.gz
-  download_osx: https://github.com/PintaProject/Pinta/releases/download/1.6/Pinta.app.zip
-  download_win: https://github.com/PintaProject/Pinta/releases/download/1.6/pinta-1.6.exe
-  download_zip: https://github.com/PintaProject/Pinta/releases/download/1.6/pinta-1.6.zip
+  version: 1.7
+  release_notes: /releases/1-7
+  download_tarball: https://github.com/PintaProject/Pinta/releases/download/1.7/pinta-1.7.tar.gz
+  download_osx: https://github.com/PintaProject/Pinta/releases/download/1.7/Pinta.app.zip
+  download_win: https://github.com/PintaProject/Pinta/releases/download/1.7/Pinta.exe
+  download_zip: https://github.com/PintaProject/Pinta/releases/download/1.7/pinta-1.7.zip
 
 links:
   suggestions: https://communiroo.com/pintaproject/pinta/suggestions

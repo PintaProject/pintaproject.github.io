@@ -18,21 +18,13 @@ Pinta is available in default Ubuntu repository. You can install it using:
 
 But Pinta from default Ubuntu repository can be an old version, so you may want to install more recent version of Pinta from Pinta maintainers PPA repository. See below.
 
-### Install Pinta from Pinta maintainers PPA repository using graphical user interface (for beginners)
-Software in default Ubuntu repository can be out of date. Pinta maintainers offer newer versions in [software repository named PPA][1]. In an Ubuntu it is very easy to add a new PPA to your software repository lists to install new software or provide system updates.
-
-* Click on Ubuntu Software Center from Launcher (left site icon panel).
-* From menu Edit click on Software Sources.
-* Click on Other Software tab.
-* From the bottom of dialog click on Add button.
-* Paste: deb http://ppa.launchpad.net/pinta-maintainers/pinta-daily/ubuntu *ubuntu_version* main
-* Note: Instead of *ubuntu_version* use: precise for Ubuntu 12.04, trusty for Ubuntu 14.04, xenial for Ubuntu 16.04 or yakkety for Ubuntu 16.10.
-* Click on Close button and then in right top input box type in Pinta and from listed application click Install button at Pinta program.
-
 ### Install Pinta from Pinta maintainers PPA repository using terminal (for advanced users)
 
 Open terminal with CTRL+ALT+T
-Add Pinta stable PPA repository:
+
+First, [install the latest version of Mono](https://www.mono-project.com/download/stable/#download-lin) (**version 6.10 or higher is strongly recommended**)
+
+Add [Pinta stable PPA repository](https://launchpad.net/~pinta-maintainers/+archive/ubuntu/pinta-stable):
 
 `sudo add-apt-repository ppa:pinta-maintainers/pinta-stable`
 

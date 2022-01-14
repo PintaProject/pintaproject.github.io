@@ -1,10 +1,10 @@
 release:
-  version: 2.0.1
-  release_notes: /releases/2-0-1
-  download_tarball: https://github.com/PintaProject/Pinta/releases/download/2.0.1/pinta-2.0.1.tar.gz
-  download_osx: https://github.com/PintaProject/Pinta/releases/download/2.0.1/Pinta.dmg
-  download_win: https://github.com/PintaProject/Pinta/releases/download/2.0.1/Pinta.exe
-  download_zip: https://github.com/PintaProject/Pinta/releases/download/2.0.1/pinta-2.0.1.zip
+  version: 2.0.2
+  release_notes: /releases/2-0-2
+  download_tarball: https://github.com/PintaProject/Pinta/releases/download/2.0.2/pinta-2.0.2.tar.gz
+  download_osx: https://github.com/PintaProject/Pinta/releases/download/2.0.2/Pinta.dmg
+  download_win: https://github.com/PintaProject/Pinta/releases/download/2.0.2/Pinta.exe
+  download_zip: https://github.com/PintaProject/Pinta/releases/download/2.0.2/pinta-2.0.2.zip
 
 links:
   suggestions: https://communiroo.com/pintaproject/pinta/suggestions

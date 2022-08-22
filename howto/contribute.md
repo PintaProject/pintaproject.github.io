@@ -49,7 +49,7 @@ Pull requests are thoroughly explained [here][9]. You will want to send a pull r
 [3]: https://translations.launchpad.net/pinta
 [4]: http://progit.org/book/
 [5]: https://github.com/PintaProject/Pinta
-[6]: http://help.github.com/fork-a-repo/
+[6]: https://docs.github.com/en/get-started/quickstart/fork-a-repo
 [7]: https://github.com/PintaProject/Pinta/blob/master/readme.md
-[8]: http://help.github.com/create-a-repo/
-[9]: http://help.github.com/send-pull-requests/
+[8]: https://docs.github.com/en/get-started/quickstart/create-a-repo
+[9]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests

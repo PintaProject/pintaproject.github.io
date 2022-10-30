@@ -23,7 +23,7 @@ Suggestions on new documentation can be mailed to the [Pinta Google Group][4].
 
 [1]: installing-pinta
 [3]: https://github.com/PintaProject/Pinta/wiki
-[2]: building-pinta
+[2]: https://github.com/PintaProject/Pinta/blob/master/readme.md#building-on-windows
 [4]: mailto:pinta@googlegroups.com
 [5]: pinta-on-web
 [6]: distributions-web

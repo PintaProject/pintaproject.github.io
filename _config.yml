@@ -7,6 +7,8 @@ release:
   download_zip: https://github.com/PintaProject/Pinta/releases/download/2.1.1/pinta-2.1.1.zip
 
 links:
+  bugs: https://bugs.launchpad.net/pinta
   suggestions: https://communiroo.com/pintaproject/pinta/suggestions
-  questions: https://communiroo.com/pintaproject/pinta/questions
+  questions: https://github.com/PintaProject/Pinta/discussions/categories/q-a
   discussions: https://communiroo.com/pintaproject/pinta/discussions
+  translations: https://translations.launchpad.net/pinta

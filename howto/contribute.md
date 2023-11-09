@@ -44,9 +44,9 @@ When you are satisfied that you have a great fix to share with the world, commit
 
 Pull requests are thoroughly explained [here][9]. You will want to send a pull request to the Pinta repository from your fork. When the developers see your request, they will test your solution and if it is good they will merge it into the Pinta source code. They will then close the bug on Launchpad and add your name to the credits as a contributor, and you get a lovely warm feeling inside from helping make the world a better place!
 
-[1]: https://bugs.launchpad.net/pinta/+bugs
-[2]: https://communiroo.com/pintaproject/pinta/suggestions
-[3]: https://translations.launchpad.net/pinta
+[1]: {{site.links.bugs}}
+[2]: {{site.links.suggestions}}
+[3]: {{site.links.translations}}
 [4]: http://progit.org/book/
 [5]: https://github.com/PintaProject/Pinta
 [6]: https://docs.github.com/en/get-started/quickstart/fork-a-repo

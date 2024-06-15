@@ -7,7 +7,7 @@ release:
   download_zip: https://github.com/PintaProject/Pinta/releases/download/2.1.2/pinta-2.1.2.zip
 
 links:
-  bugs: https://bugs.launchpad.net/pinta
+  bugs: https://github.com/PintaProject/Pinta/issues
   suggestions: https://github.com/PintaProject/Pinta/discussions/categories/ideas
   questions: https://github.com/PintaProject/Pinta/discussions/categories/q-a
   discussions: https://github.com/PintaProject/Pinta/discussions/categories/general

@@ -1,75 +1,233 @@
----
-layout: default
-title: Download - Pinta
----
-<div class="features" style="margin-bottom: 10px;">Download Pinta {{site.release.version}}</div>
+<!DOCTYPE html>
+<html lang="en" class="pinta-dark">
+  <head>
+    <style media="screen">
+      html {
+        opacity: 0;
+        transition: opacity 0.1s ease-in-out;
+      }
 
-  <div class="left-column" style="width: 100%">
-    <div style="line-height: 19px;">
-      <a href="{{site.release.release_notes}}">Release Notes</a>
-      <table width="100%" style="margin-top: 15px;">
-        <tr>
-          <td style="width: 50%; vertical-align: top">
-            <img src="images/flatpak.png" alt="Flatpak" width="48" height="48" />
-            <p class="bullet" style="height: 60px">
-              <span class="title">Linux (Flatpak)</span><br />
-              <a href="https://www.flathub.org/apps/details/com.github.PintaProject.Pinta" target="_blank">Download</a> | <a href="https://www.flatpak.org/setup/" target="_blank">Setup</a>
-            </p>
-            <img src="images/windows.png" alt="Windows" width="48" height="48" />
-            <p class="bullet" style="height: 60px">
-              <span class="title">Windows</span><br />
-              <a href="{{site.release.download_win}}">Download</a>
-            </p>
-            <img src="images/tarball.png" alt="Tarball" width="48" height="48" />
-            <p class="bullet" style="height: 60px">
-              <span class="title">Tarball</span><br />
-              <a href="{{site.release.download_tarball}}">Download</a>
-            </p>
-            <img src="images/openbsd.png" alt="OpenBSD" width="48" height="48" />
-            <p class="bullet" style="height: 60px">
-              <span class="title">OpenBSD</span><br/>
-              <a href="/howto/installing-pinta" target="_blank">Setup Guide</a>
-            </p>
-          </td>
-          <td style="width: 50%; vertical-align: top">
-            <img src="images/snap.png" alt="Snap" width="48" height="48" />
-            <p class="bullet" style="height: 60px">
-              <span class="title">Linux (Snap)</span><br />
-              <a href="https://snapcraft.io/pinta" target="_blank">Download</a> | <a href="https://snapcraft.io/docs/installing-snapd" target="_blank">Setup</a>
-            </p>
-            <img src="images/osx.png" alt="macOS" width="48" height="48" />
-            <p class="bullet" style="height: 60px">
-              <span class="title">macOS</span><br/>
-              <a href="{{site.release.download_osx}}">Download</a>
-            </p>
-            <img src="images/zip.png" alt="Zip File" width="48" height="48" />
-            <p class="bullet" style="height: 60px">
-              <span class="title">Zip File</span><br />
-              <a href="{{site.release.download_zip}}">Download</a>
-            </p>
-            <img src="images/github.png" alt="Source Code" width="48" height="48" />
-            <p class="bullet" style="height: 60px">
-              <span class="title">Source Code (Github)</span><br />
-              <a href="http://github.com/PintaProject" target="_blank">Pinta on GitHub</a>
-            </p>
-          </td>
-        </tr>
-      </table>
-    </div>
+      html[data-theme] {
+        opacity: 1;
+      }
 
-    <p>
-      <h2 class="noline">Development Builds</h2>
-      Preview what's coming next for Pinta by <a href="https://github.com/PintaProject/Pinta/actions">downloading builds from each revision</a> (requires being logged in to a Github account).
-    </p>
+      .pinta-theme-toggle {
+        opacity: 0;
+      }
 
-    <p>
-      <h2 class="noline">Build Pinta</h2>
-      If you'd rather build Pinta yourself, see the <a href="https://github.com/PintaProject/Pinta/blob/master/readme.md#building-on-windows">Building Pinta</a> guide.
-    </p>
+      .pinta-menu-info .pinta-theme-toggle {
+        opacity: 1;
+      }
+    </style>
 
-    <p>
-      <h2 class="noline">Previous Releases</h2>
-      Prefer the classics? They're still available on the <a href="/releases/old-releases">Older Releases</a> page.
-    </p>
+    <script>
+      (function() {
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme === 'light') {
+            document.documentElement.classList.remove('pinta-dark');
+            document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+            document.documentElement.classList.add('pinta-dark');
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
 
-</div>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Downloads - Pinta: Painting Made Simple</title>
+
+    <script src="../js/pinta-theme.js" defer charset="utf-8"></script>
+
+    <link rel="preload" as="image" href="../img/photos/hero-sub.webp" type="image/webp">
+    <link rel="preload" href="../css/fonts.css" as="style">
+    <link rel="preload" href="../css/pinta.css" as="style">
+    <link rel="preload" href="../css/pinta-subs.css" as="style">
+    <link rel="preload" href="../css/fonts/Baumans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../css/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <meta property="og:title" content="Pinta: Painting Made Simple">
+    <meta property="og:description" content="Pinta is a free, open-source program for drawing and image editing. It combines powerful features with an easy-to-use interface, making creativity seamless. Available for Linux, Mac, Windows, and *BSD.">
+    <meta property="og:image" content="../img/pinta-logo.png">
+    <meta property="og:url" content="https://pinta-project.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Pinta">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Pinta: Painting Made Simple">
+    <meta property="twitter:description" content="Create and edit images effortlessly with Pinta, the open-source painting and image editing tool for Linux, Mac, Windows, and *BSD.">
+    <meta property="twitter:image" content="../img/pinta-logo.png">
+    <meta name="description" content="Pinta is a free, open-source painting and image editing program designed for simplicity and power. Available on Linux, Mac, Windows, and *BSD, it offers an intuitive interface, unlimited undo, real-time effects, and essential tools to enhance creativity effortlessly.">
+
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/pinta.css">
+    <link rel="stylesheet" href="../css/pinta-subs.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="../favicon.ico">
+  </head>
+  <body class="pinta-sub" id="pinta">
+
+    <button class="pinta-theme-toggle" type="button" name="theme-toggle" aria-label="Toggle The Theme" id="pinta-theme-switcher">
+      <img src="../img/icons/theme/sun.svg" alt="">
+      <img src="../img/icons/theme/moon.svg" alt="">
+    </button>
+
+    <!--This section contains the page content-->
+    <main class="pinta-main pinta-portfolio">
+      <h1 class="pinta-page-heading">Download</h1>
+      <section class="pinta-description-box">
+        <h2 id="pinta-downloads-heading">
+          Latest Release
+        </h2>
+        <div class="pinta-release-notes-link">
+          <a href="notes">
+            Release Notes
+          </a>
+        </div>
+        <article class="pinta-article pinta-release-block">
+          <div class="pinta-release-block">
+            <p>
+              Get the latest stable release of Pinta for a reliable and polished
+              experience. This version has been tested and is recommended for
+              everyday use. Stay up to date with new features, improvements, and
+              bug fixes by downloading the latest release for your platform.
+            </p>
+            <ul class="pinta-downloads-list">
+              <li>
+                <img src="../img/icons/downloads/flatpak.png" alt="" loading="lazy">
+                <div class="pinta-download-title">
+                  <span>Linux (Flatpak)</span>
+                  <div class="">
+                    <a id="pinta-download-flatpak" href="https://www.flathub.org/apps/details/com.github.PintaProject.Pinta">Download</a>
+                    <a id="pinta-setup-flatpak" href="https://www.flatpak.org/setup/">Setup</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img src="../img/icons/downloads/snap.png" alt="" loading="lazy">
+                <div class="pinta-download-title">
+                  <span>Linux (Snap)</span>
+                  <div>
+                    <a id="pinta-download-snap" href="https://snapcraft.io/pinta">Download</a>
+                    <a id="pinta-setup-snap" href="https://snapcraft.io/docs/installing-snapd">Setup</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img src="../img/icons/downloads/windows.svg" alt="" loading="lazy">
+                <div class="pinta-download-title">
+                  <span>Windows</span>
+                  <a id="pinta-download-win" href="#">Download</a>
+                </div>
+              </li>
+              <li>
+                <img class="pinta-invert2" src="../img/icons/downloads/macos.svg" alt="" loading="lazy">
+                <div class="pinta-download-title">
+                  <span>macOS</span>
+                  <a id="pinta-download-osx" href="#">Download</a>
+                </div>
+              </li>
+              <li>
+                <img src="../img/icons/downloads/tarball.svg" alt="" loading="lazy">
+                <div class="pinta-download-title">
+                  <span>Tarball</span>
+                  <a id="pinta-download-tarball" href="#">Download</a>
+                </div>
+              </li>
+              <li>
+                <img src="../img/icons/downloads/zip.svg" alt="" loading="lazy">
+                <div class="pinta-download-title">
+                  <span>Zip File</span>
+                  <a id="pinta-download-zip" href="#">Download</a>
+                </div>
+              </li>
+              <li>
+                <img src="../img/icons/downloads/openbsd.png" alt="" loading="lazy">
+                <div class="pinta-download-title">
+                  <span>OpenBSD</span>
+                  <a href="https://www.pinta-project.com/howto/installing-pinta">Setup Guide</a>
+                </div>
+              </li>
+              <li>
+                <img class="pinta-invert2" src="../img/icons/github-142-svgrepo-com.svg" alt="" loading="lazy">
+                <div class="pinta-download-title">
+                  <span>GitHub</span>
+                  <a href="http://github.com/PintaProject/Pinta">Source Code</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="pinta-release-figure">
+            <figure>
+              <img src="../img/releases/powerinhands-light.webp" alt="" loading="lazy">
+            </figure>
+            <figure>
+              <img src="../img/releases/powerinhands.webp" alt="" loading="lazy">
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <section class="pinta-description-box">
+        <h2>
+          Development Builds
+        </h2>
+        <article class="pinta-article pinta-block">
+          <div class="pinta-release-figure">
+            <figure>
+              <img src="../img/releases/devbuilds-light.webp" alt="" loading="lazy">
+            </figure>
+            <figure style="width: 100%;">
+              <img src="../img/releases/devbuilds.webp" alt="" loading="lazy">
+            </figure>
+          </div>
+          <p>
+            Preview what's coming next for Pinta by downloading a
+            <a href="https://github.com/PintaProject/Pinta/releases/tag/dev-preview-builds">
+              development build.
+            </a>
+            These builds are updated periodically, giving you early access to
+            new features and improvements.
+            <br><br>
+            However, development builds are
+            primarily intended for testing purposes and may contain bugs or
+            unfinished features.
+            <br><br>
+            As a result, they are not recommended for
+            production work. If you'd like to test the latest changes, you can
+            also <a href="https://github.com/PintaProject/Pinta/actions">
+              download builds from each revision</a> (requires being logged in
+              to a GitHub account).
+          </p>
+        </article>
+      </section>
+
+      <section class="pinta-description-box">
+        <h2>
+          Build from source
+        </h2>
+        <article class="pinta-article pinta-block">
+          <p>
+            If you'd rather build Pinta yourself, see the <a href="../howto/build-pinta">Building Pinta</a> guide.
+          </p>
+        </article>
+      </section>
+
+    </main>
+
+    <!--This section footer-->
+    <div class="" id="pinta-footer-tag" data-base="../" data-active="#pinta-release-footer"></div>
+
+    <!--This section contains the navbar and menu-->
+    <div class="" id="pinta-menu-tag" data-base="../" data-active="#pinta-releases"></div>
+
+    <script src="../js/pinta.js" charset="utf-8" defer></script>
+    <script src="../js/pinta-downloads.js" charset="utf-8"></script>
+    <script src="../js/pinta-os-detect.js" charset="utf-8"></script>
+  </body>
+</html>

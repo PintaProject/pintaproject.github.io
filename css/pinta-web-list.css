@@ -1,0 +1,98 @@
+.pinta-docs .pinta-web-list {
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+  margin: 1.376% 5% 0 5% ;
+  padding: 0;
+}
+
+.pinta-web-list .pinta-web-link-item {
+  border: 1px solid var(--pinta-blue1);
+  border-radius: 8px;
+  margin: 2vw 0;
+  padding: 2.736vw;
+}
+
+.pinta-web-list .pinta-web-link-title {
+  font-size: 105%;
+  font-weight: 400;
+  padding: 0 5px;
+}
+
+.pinta-web-list .pinta-web-link-description {
+  padding: 0 0 .75% 0;
+}
+
+.pinta-web-list .pinta-web-link-bottom-container {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 35px 0 0 0;
+}
+
+.pinta-web-list .pinta-web-lang,
+.pinta-web-list .pinta-web-link-date {
+  border: 1px solid #767676;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.736;
+  padding: 0 8px;
+  text-align: center;
+}
+
+.pinta-web-list .pinta-web-lang {
+  background: var(--pinta-color);
+  border: 1px solid #36363636;
+  color: var(--pinta-bg-color);
+  font-weight: 600;
+  margin: 0 auto 0 5px;
+  filter: invert(1);
+}
+
+.pinta-web-list .pinta-button {
+  margin: 0;
+}
+
+.pinta-web-list .load-more-button {
+  margin: 20px auto;
+  padding: 18px 5vw;
+}
+
+.pinta-web-list .load-more-button:hover {
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 560px) {
+  .pinta-web-list .pinta-web-link-bottom-container {
+    align-items: stretch;
+    gap: 8px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 35px 0 0 0;
+  }
+
+  .pinta-web-link-bottom-container .pinta-button {
+    justify-content: center;
+    padding: 3px 15px 8px 15px;
+    white-space: normal;
+    width: 100%;
+    word-wrap: normal;
+  }
+
+  .pinta-web-list .pinta-web-lang,
+  .pinta-web-list .pinta-web-link-date {
+    flex: 1;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .pinta-web-list .pinta-web-lang {
+    max-width: 5rem;
+  }
+
+  .pinta-web-list .pinta-web-link-date {
+    max-width: calc(90% - 8px);
+  }
+}

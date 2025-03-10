@@ -1,0 +1,2162 @@
+:root {
+    --pinta-orange: #d6740e;
+    --pinta-orange-alt: #d8944eff;
+    --pinta-brown: #966632;
+    --complementary-orange0: #d08070;
+    --complementary-orange1: #e88585;
+    --complementary-green0: #4c972d;
+    --complementary-green1: #85e8df;
+    --complementary-green1-dark: #5ea39dff;
+    --complementary-green2: #889752;
+    --complementary-green3: #7ce4a6;
+    --complementary-green4: #7ce498;
+    --pinta-blue0: #55657e;
+    --pinta-blue1: #6395c2;
+    --pinta-download-title: linear-gradient(90deg, white, var(--pinta-blue1));
+    --pinta-setup: #454545;
+    --complementary-purple0: #832d97;
+    --complementary-purple1: #595297;
+    --complementary-pink: #e47cc4;
+    --pinta-button-bg: linear-gradient(90deg, var(--pinta-orange) 73.6%, var(--pinta-orange-alt));
+    --pinta-button-hover-bg: linear-gradient(180deg, var(--pinta-blue0), var(--pinta-blue1));
+    --pinta-button-rx-bg: transparent;
+    --pinta-button-rx-hover-bg: linear-gradient(90deg, var(--complementary-orange1), var(--complementary-green1-dark), var(--pinta-blue1));
+    --pinta-action-button0-bg: linear-gradient(90deg, var(--pinta-orange) 73.6%, var(--pinta-orange-alt));
+    --pinta-hero-action-button0-bg: linear-gradient(90deg, var(--complementary-green2) 53.6%, var(--complementary-green0));
+    /*--pinta-hero-action-button0-bg: linear-gradient(90deg, #4B0082 53.6%, #4B0082);*/
+    /*--pinta-hero-action-button0-bg: linear-gradient(90deg, #002B5B 53.6%, #002B5B);*/
+    /*--pinta-hero-action-button0-bg: linear-gradient(90deg, #006D77 53.6%, #006D77);*/
+    --pinta-action-button0-hover-bg: linear-gradient(180deg, var(--pinta-blue0), var(--pinta-blue1));
+    --pinta-button-border-radius: 4px;
+    --pinta-button-transition: 0.736s;
+    --pinta-button-font-family: "Baumans", sans-serif;
+    --pinta-download-icon: url(../img/icons/downloads/generic.svg);
+    --pinta-bg-color: white;
+    --pinta-color: #252525;
+    --pinta-link-color: var(--pinta-orange-alt);
+    --pinta-link-hover-color: var(--pinta-blue1);
+    --pinta-docs-h2-bg: rgb(236, 236, 236);
+    --pinta-tutorial-list-bg: linear-gradient(180deg, var(--pinta-orange), var(--pinta-orange-alt));
+    --pinta-tutorial-border-radius: 4px;
+    --pinta-tutorial-author-bg: rgb(236, 236, 236);
+    --pinta-return-color: transparent;
+    --pinta-return-border-color: rgba(136, 136, 136, 0.376);
+    --pinta-sub-link-border-color: rgba(236, 236, 236, 0.136);
+    --pinta-sub-link-hover-border-color: rgba(218, 218, 218, 0.736);
+    --pinta-title-color: #252525;
+    --pinta-link-list-bg: #f0f0f0;
+    --pinta-link-list-bg-hover: rgb(215, 215, 215);
+    --pinta-list-item-title-bg: white;
+    --pinta-list-item-title-color: #363636;
+    --pinta-menu-hover-bg-color: #ffffff;
+    --pinta-menu-hover-color: #353535;
+    --pinta-menu-button-border-color: rgba(76, 76, 76, 0.376);
+    --pinta-menu-button-bg-color: var(--pinta-blue1);
+    --pinta-menu-link-color: rgb(236, 136, 76);
+    --pinta-button-bg-color: var(--pinta-orange);
+    --pinta-button-color: white;
+    --pinta-docs-code-bg-color: rgb(235, 235, 235);
+    --pinta-nav-height: 65px;
+    --pinta-nav-bg-color: white;
+    --pinta-nav-color: var(--pinta-button-color);
+    --pinta-nav-font-size: clamp(18px, 85%, 85%);
+    --pinta-menu-bg-color: #ffffff;
+    --pinta-menu-color: #858585;
+    --pinta-menu-border-color: #85858535;
+    --pinta-menu-anchor-hover-color: var(--pinta-button-bg-color);
+    --pinta-figure-border-color: #ffffff;
+    --pinta-menu-icon-bg-color: #151515;
+    --pinta-menu-icon-color: #fdfdfd;
+    --pinta-label-bg-color: var(--complementary-orange1);
+    --pinta-label-color: white;
+    --pinta-menu-info-h2-font-size: clamp(13px, 3rem, 3rem);
+    --pinta-menu-info-h2-sub-font-size: clamp(10px, 1.8rem, 1.8rem);
+    --pinta-menu-icons-font-size: clamp(15px, 2.136rem, 2.136rem);
+    --pinta-font-size: clamp(18px, 2.736rem, 3.736rem);
+    --pinta-headline-color: white;
+    --pinta-headline-font-size: clamp(18px, 5rem, 5rem);
+    --pinta-headline-link-color: white;
+    --pinta-headline-link-border-color: #f5f5f535;
+    --pinta-headline-link-bg-color: #ffffff15;
+    --pinta-headline-link-hover-bg-color: #dddddd15;
+    --pinta-homepage-h2-color: var(--pinta-color);
+    --pinta-h2-color: var(--pinta-color);
+    --pinta-docs-h2-underline-bg: linear-gradient(90deg, var(--pinta-orange), var(--pinta-blue1) 50%);
+    --pinta-docs-h3-underline-bg: linear-gradient(var(--pinta-orange), var(--pinta-blue1));
+    --pinta-label-font-size: clamp(11px, 1.235rem, 1.235rem);
+    --pinta-h3-font-size: 125%;
+    --pinta-article-bg-color: #f3f3f3;
+    --pinta-article-h2-font-size: clamp(24px, 4.236rem, 4.736rem);
+    --pinta-description-border-color: #33333325;
+    --pinta-footer-color: #c5c5c5;
+    --pinta-footer-bg-color: #181818;
+    --pinta-footer-box-font-size: clamp(12px, 2rem, 2rem);
+    --pinta-font-family: "Inter", "Jost", sans-serif;
+    --pinta-alt-font-family: "Jost", "Inter", sans-serif;
+    --pinta-header-font-family: "Baumans", sans-serif;
+    --pinta-standard-transition: 0.376s;
+    --pinta-slow-transition: 0.736s;
+    --pinta-slower-transition: 1.236s;
+    font-size: 10px;
+}
+.pinta-dark {
+    --pinta-bg-color: rgb(35, 35, 35);
+    --pinta-color: #f5f5f5;
+    --pinta-menu-button-border-color: rgb(136, 136, 136);
+    --pinta-menu-button-bg-color: var(--pinta-blue1);
+    --pinta-docs-code-bg-color: rgb(25, 25, 25);
+    --pinta-docs-h2-bg: rgb(28, 28, 28);
+    --pinta-tutorial-author-bg: rgb(28, 28, 28);
+    --pinta-return-color: #151515;
+    --pinta-nav-bg-color: #353535;
+    --pinta-link-list-bg: #18181876;
+    --pinta-list-item-title-bg: #181818;
+    --pinta-list-item-title-color: #f0f0f0;
+    --pinta-link-list-bg-hover: #060606;
+    --pinta-sub-link-hover-border-color: rgba(236, 236, 236, 0.736);
+    --pinta-menu-bg-color: #2f2f2f;
+    --pinta-menu-color: #f0f0f0;
+    --pinta-figure-border-color: #dadada;
+    --pinta-menu-icon-bg-color: #151515;
+    --pinta-menu-icon-color: #fdfdfd;
+    --pinta-headline-color: white;
+    --pinta-article-bg-color: #434343;
+    --pinta-description-border-color: #f3f3f325;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(16px, 2.35rem, 2.35rem);
+    -webkit-tap-highlight-color: #fff0;
+}
+strong {
+    font-size: inherit;
+    font-weight: 300;
+}
+h2 {
+    font-weight: 300;
+    text-transform: lowercase;
+    position: relative;
+    word-wrap: break-word;
+}
+html,
+body {
+    max-width: 100vw;
+    overflow-x: clip;
+}
+body {
+    background-color: var(--pinta-bg-color);
+    color: var(--pinta-color);
+    font-family: var(--pinta-font-family);
+    font-weight: 200;
+    letter-spacing: 0.01em;
+    line-height: 2;
+    display: flex;
+    flex-flow: column;
+}
+.pinta-dark .pinta-invert {
+    filter: invert(1);
+}
+.pinta-invert2 {
+    filter: invert(1);
+}
+.pinta-dark .pinta-invert2 {
+    filter: invert(0);
+}
+.pinta-flex-column {
+    flex-flow: column;
+}
+.pinta-photo {
+    display: flex;
+    margin: 0 10rem 5rem 10rem;
+    width: fit-content;
+}
+.pinta-photo-right {
+    order: 1;
+}
+.pinta-photo img {
+    object-fit: cover;
+    border-radius: 18px;
+    filter: drop-shadow(5px 0 9.736px rgb(0 0 0 / 0.736));
+    max-width: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+.pinta-photo-swap {
+    display: flex;
+    position: relative;
+}
+.pinta-photo-swap .pinta-photo-swap-dark,
+.pinta-photo-swap .pinta-photo-swap-light {
+    transition: var(--pinta-standard-transition);
+}
+.pinta-photo-swap .pinta-photo-swap-dark {
+    opacity: 0;
+}
+.pinta-photo-swap .pinta-photo-swap-light {
+    opacity: 1;
+    inset: 0;
+    position: absolute;
+}
+.pinta-dark .pinta-photo-swap .pinta-photo-swap-dark {
+    opacity: 1;
+}
+.pinta-dark .pinta-photo-swap .pinta-photo-swap-light {
+    opacity: 0;
+}
+.pinta-cta-group {
+    align-items: center;
+    background: #fff0;
+    box-shadow: inset 0 0 18px rgb(0 0 0 / 0.236);
+    backdrop-filter: brightness(0.5);
+    background-size: cover;
+    color: #f5f5f5;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 2rem 0 5rem 0;
+    position: relative;
+    width: 100%;
+}
+.pinta-cta-group::after {
+    align-items: center;
+    background: url(../img/photos/cta-img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    inset: 0;
+    justify-content: space-around;
+    position: absolute;
+    z-index: -2;
+}
+.pinta-cta-group::before {
+    align-items: center;
+    background: #000;
+    background-size: cover;
+    content: "";
+    inset: 0;
+    backdrop-filter: blur(7.36px);
+    justify-content: space-around;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+.pinta-cta-heading-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 37.6px 0;
+  width: 100%;
+}
+.pinta-cta-group .pinta-heading2 {
+  flex: 1;
+  font-size: var(--pinta-article-h2-font-size);
+  justify-content: center;
+  letter-spacing: 0.236vw;
+  margin: 0 0 3rem 0;
+  padding: 2.736rem 15px;
+  text-transform: lowercase;
+  max-width: fit-content;
+}
+.pinta-cta-block {
+  align-items: center;
+  aspect-ratio: 2/1;
+  border-radius: 8px;
+  box-shadow: 0 2.736px 9.396px rgb(0 0 0 / 0.476);
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  position: relative;
+  width: 30%;
+}
+.pinta-cta-block:nth-of-type(1) {
+    background: url(../img/photos/cta-1.webp);
+    background-position: center;
+    background-size: cover;
+}
+.pinta-cta-block:nth-of-type(2) {
+    background: url(../img/photos/cta-2.webp);
+    background-position: center;
+    background-size: cover;
+}
+.pinta-cta-block:nth-of-type(3) {
+    background: url(../img/photos/cta-3.webp);
+    background-position: center;
+    background-size: cover;
+}
+.pinta-cta-block p {
+    border: 1px solid rgb(135 135 135 / 0.236);
+    box-shadow: 0 0 8px rgbax(0, 0, 0, 0.236);
+    color: #fff;
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    inset: auto 5% 5% 5%;
+    justify-content: center;
+    letter-spacing: 0.236em;
+    overflow: clip;
+    padding: 0 7.296vw;
+    position: absolute;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.pinta-cta-block p::after {
+    background: var(--pinta-bg-color);
+    content: "";
+    inset: 0;
+    opacity: 0.236;
+    position: absolute;
+    z-index: -1;
+}
+.pinta-cta-closer {
+    border-radius: 18px;
+    font-family: "Inter", "Jost", sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-flow: column;
+    max-width: 1200px;
+    padding: 8rem 3rem 3rem 3rem;
+    width: 80%;
+}
+.pinta-cta-closer p {
+    font-size: 125%;
+    line-height: 2;
+    text-align: center;
+}
+.pinta-nav {
+    align-items: center;
+    background: var(--pinta-nav-bg-color);
+    box-shadow: 0 0 15px rgb(0 0 0 / 0.276);
+    color: var(--pinta-nav-color);
+    display: flex;
+    inset: 0 0 calc(100% - var(--pinta-nav-height)) 0;
+    justify-content: space-between;
+    max-width: 100vw;
+    position: fixed;
+    transition: var(--pinta-slow-transition);
+    z-index: 1;
+}
+.pinta-title {
+    color: var(--pinta-title-color);
+    display: flex;
+    height: 100%;
+    text-decoration: none;
+}
+.pinta-title img {
+    margin: auto -4.736% auto 7.936px;
+    padding: 0.176%;
+    height: 63.6%;
+}
+.pinta-title span {
+    align-items: center;
+    color: #353535;
+    display: flex;
+    font-family: "Baumans", serif;
+    font-size: 97.36%;
+    height: 100%;
+    padding: 2rem 3.735rem;
+    transform: translateX(-9.736px);
+}
+.pinta-dark .pinta-title span {
+    color: #f5f5f5;
+}
+.pinta-title span .pinta-title-tagline {
+    align-items: center;
+    color: var(--pinta-color);
+    display: flex;
+    font-family: var(--pinta-alt-font-family);
+    font-size: calc(var(--pinta-nav-font-size) * 0.965);
+    font-weight: 300;
+    height: 100%;
+    letter-spacing: 0.05em;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0 0.736rem;
+    transform: translateY(1px);
+    transition: opacity 1s, visibility 1s;
+}
+.pinta-download-button {
+    align-items: center;
+    background: #fff0;
+    border: none;
+    border-radius: 3px;
+    color: var(--pinta-button-color);
+    display: flex;
+    flex-flow: row;
+    font-family: var(--pinta-button-font-family);
+    font-size: var(--pinta-nav-font-size);
+    font-weight: 400;
+    height: 73.65%;
+    margin: 0 0 0 auto;
+    overflow: clip;
+    padding: 0 0.476rem 0 1.736rem;
+    position: relative;
+    text-decoration: none;
+    transition: 0.736s;
+    white-space: nowrap;
+}
+.pinta-download-button::after,
+.pinta-download-button::before {
+    border-radius: 3px;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transition: 0.736s;
+    z-index: -1;
+}
+.pinta-download-button::after {
+    background: var(--pinta-action-button0-bg);
+    opacity: 1;
+}
+.pinta-download-button:hover:after {
+    opacity: 0;
+}
+.pinta-download-button::before {
+    background: var(--pinta-action-button0-hover-bg);
+    opacity: 0;
+}
+.pinta-download-button:hover:before {
+    opacity: 1;
+}
+.pinta-download-button:hover {
+    cursor: pointer;
+}
+.pinta-download-button div {
+    background: var(--pinta-download-icon);
+    background-size: 73.6%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 0 0 5px;
+    height: 50px;
+    width: 50px;
+}
+.pinta-download-button span {
+    transform: translateY(-2px) translateX(5px);
+}
+.windows {
+    --pinta-download-icon: url(../img/icons/downloads/windows.svg);
+}
+.flatpak {
+    --pinta-download-icon: url(../img/icons/downloads/flatpak.svg);
+}
+.ubuntu {
+    --pinta-download-icon: url(../img/icons/downloads/ubuntu.svg);
+}
+.macos {
+    --pinta-download-icon: url(../img/icons/downloads/macos.svg);
+}
+.github {
+    --pinta-download-icon: url(../img/icons/downloads/github.svg);
+}
+.generic {
+    --pinta-download-icon: url(../img/icons/downloads/generic.svg);
+}
+.pinta-menu-button {
+    align-items: center;
+    background-color: #fff0;
+    border: none;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 0 0 0 1rem;
+    overflow: hidden;
+    position: relative;
+    transition: var(--pinta-standard-transition);
+    width: var(--pinta-nav-height);
+}
+.pinta-menu-button::after {
+    background: linear-gradient(180deg, var(--pinta-blue0), var(--pinta-blue1));
+    content: "";
+    inset: 0;
+    opacity: 0;
+    position: absolute;
+    transition: 0.736s;
+    z-index: -1;
+}
+.pinta-menu-button.active:after,
+.pinta-menu-button:hover:after {
+    opacity: 1;
+}
+.pinta-menu-button div {
+    background: var(--pinta-color);
+    border-radius: 3px;
+    inset: 48% 25%;
+    position: absolute;
+    transform: translateX(1px);
+    transition: var(--pinta-slow-transition);
+}
+.pinta-menu-button div::before,
+.pinta-menu-button div::after {
+    transition: var(--pinta-slow-transition);
+}
+.pinta-menu-button div::before,
+.pinta-menu-button div::after {
+    background: var(--pinta-color);
+    border-radius: 3px;
+    content: "";
+    inset: 0;
+    position: absolute;
+}
+.pinta-menu-button div::after {
+    transform: translateY(-10px);
+}
+.pinta-menu-button div::before {
+    transform: translateY(10px);
+}
+.pinta-menu-button.active div {
+    background: #fff0;
+    height: 0;
+}
+.pinta-menu-button:hover div::after,
+.pinta-menu-button:hover div::before,
+.pinta-menu-button.active div::after,
+.pinta-menu-button.active div::before {
+    background: #fff;
+}
+.pinta-menu-button.active div::after {
+    inset: -3px 0;
+    transform: rotate(45deg);
+}
+.pinta-menu-button.active div::before {
+    inset: -3px 0;
+    transform: rotate(-45deg);
+}
+.pinta-menu-closer {
+    background: rgb(0 0 0 / 0.236);
+    border: none;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    transition: 1s;
+    visibility: hidden;
+    max-width: 100vw;
+    z-index: 1;
+}
+.pinta-menu-closer.active {
+    backdrop-filter: blur(1px);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+.pinta-menu {
+    background-color: var(--pinta-menu-bg-color);
+    border-bottom-left-radius: 18px;
+    box-shadow: 0 6px 8px rgb(0 0 0 / 0.065);
+    max-height: calc(100vh - var(--pinta-nav-height));
+    max-width: 636px;
+    opacity: 0;
+    overflow-y: auto;
+    position: absolute;
+    right: 0;
+    top: var(--pinta-nav-height);
+    transform: translateX(100%);
+    transition: all var(--pinta-slow-transition), transform 1.35s;
+    transform-origin: right;
+    visibility: hidden;
+}
+.pinta-menu-open {
+    opacity: 1;
+    transform: none;
+    transition: all var(--pinta-slow-transition), transform 0.436s linear;
+    visibility: visible;
+}
+.pinta-menu-item {
+    border: 1px solid #fff0;
+    border-radius: 8px;
+    display: flex;
+    list-style: none;
+    margin: 2px auto;
+    transition: 0.736s, color 0s;
+    width: 93.735%;
+    z-index: 1;
+}
+.pinta-menu-item:hover {
+    border: 1px solid var(--pinta-blue1);
+    color: var(--pinta-menu-hover-color);
+}
+.pinta-menu-item.pinta-disabled {
+    color: var(--pinta-menu-color);
+    pointer-events: none;
+    opacity: 0.736;
+}
+.pinta-menu .pinta-disabled .pinta-button {
+    color: var(--pinta-blue1);
+    position: relative;
+}
+.pinta-menu .pinta-disabled .pinta-button::after {
+    height: 0;
+    border-top: 5px solid #fff0;
+    border-bottom: 5px solid #fff0;
+    border-left: 10px solid var(--pinta-menu-color);
+    inset: 43.736% auto auto 25px;
+    position: absolute;
+    width: 0;
+}
+.pinta-menu .pinta-button {
+    background-color: #fff0;
+    border-radius: 3px;
+    color: var(--pinta-menu-link-color);
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    flex: 1;
+    height: 100%;
+    letter-spacing: 0.076rem;
+    margin: 0;
+    padding: 0.736rem 0 0.736rem 4.736rem;
+    transition: 0.235s;
+    text-align: left;
+    text-decoration: none;
+}
+.pinta-menu .pinta-button::after,
+.pinta-menu .pinta-button::before {
+    background: #fff0;
+}
+.pinta-menu-item:hover .pinta-button {
+    color: var(--pinta-blue1);
+}
+.pinta-menu-split {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 2.5% 5% 2.5%;
+    width: 100%;
+}
+.pinta-menu-split ul {
+    display: flex;
+    flex-flow: column;
+    margin: 1%;
+    width: 48%;
+    max-width: 48%;
+    padding: 0 0 10px 0;
+    position: relative;
+}
+.pinta-menu-split ul::after {
+    border: 1px solid var(--pinta-blue1);
+    border-radius: 8px;
+    content: "";
+    inset: 0;
+    opacity: 0.5;
+    position: absolute;
+}
+.pinta-menu-category {
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+    width: 100%;
+}
+.pinta-menu-split h2 {
+    align-items: center;
+    color: var(--pinta-menu-color);
+    display: flex;
+    font-weight: 400;
+    padding: 25px 25px 15px 25px;
+    margin: 0 auto 15px auto;
+    position: relative;
+    width: 80%;
+}
+.pinta-dark .pinta-menu-split h2 {
+    filter: brightness(1.5);
+}
+.pinta-menu-split h2::after {
+    background: var(--pinta-docs-h2-underline-bg);
+    height: 2px;
+    content: "";
+    inset: auto 5% 0 0;
+    margin: 0 auto;
+    position: absolute;
+    width: 80%;
+}
+.pinta-menu .pinta-button:hover {
+    color: var(--pinta-menu-anchor-hover-color);
+    filter: hue-rotate(-18deg) brightness(1.276) grayscale(0.135);
+}
+.pinta-menu-info {
+    align-items: start;
+    border-right: none;
+    border-top: none;
+    display: flex;
+    flex-flow: row;
+    margin: 0 0 4.376% 5%;
+    padding: 5rem;
+    position: relative;
+}
+.pinta-menu-info figure {
+    aspect-ratio: 1/1;
+    border: 0.5rem solid var(--pinta-figure-border-color);
+    box-shadow: 5px 8px 18px rgb(0 0 0 / 0.135);
+    border-radius: 50%;
+    min-height: 76px;
+    min-width: 76px;
+    position: relative;
+    width: 200px;
+}
+.pinta-menu-split {
+    display: flex;
+    justify-content: stretch;
+}
+@keyframes pinta-rotate-after {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(365deg);
+    }
+}
+.pinta-menu-info figure::after {
+    animation: pinta-rotate-after 9.635s linear infinite;
+    border-left: 0.376rem solid var(--pinta-orange);
+    border-radius: 50%;
+    content: "";
+    filter: blur(0.736px);
+    inset: -12.736%;
+    position: absolute;
+    opacity: 0.636;
+}
+.pinta-dark .pinta-menu-info figure::after {
+    border-left: 0.376rem solid var(--pinta-orange);
+}
+@keyframes pinta-rotate-before {
+    from {
+        transform: rotate(365deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
+.pinta-menu-info figure::before {
+    animation: pinta-rotate-before 9.735s linear infinite;
+    border-left: 0.436rem solid var(--pinta-blue1);
+    border-radius: 50%;
+    content: "";
+    filter: blur(0.736px);
+    inset: -21.936%;
+    position: absolute;
+    opacity: 0.636;
+}
+.pinta-dark .pinta-menu-info figure::before {
+    border-left: 0.436rem solid var(--pinta-blue1);
+}
+.pinta-menu-info img {
+    aspect-ratio: 1/1;
+    transform: scale(1.015);
+    width: 100%;
+    z-index: -1;
+}
+.pinta-menu-info h2 {
+    color: var(--pinta-menu-color);
+    font-family: var(--pinta-header-font-family);
+    font-size: var(--pinta-menu-info-h2-font-size);
+    font-weight: 500;
+    margin: 0 2.365rem;
+    padding: 2.35rem 3.65rem 0.135rem 3.65rem;
+    position: relative;
+    white-space: nowrap;
+}
+.pinta-menu-info h2::after {
+    background: linear-gradient(-90deg, var(--pinta-orange), var(--pinta-blue1) 50%);
+    content: "";
+    font-size: var(--pinta-menu-info-h2-font-size);
+    inset: auto -2.376% 17.5% auto;
+    height: 2px;
+    opacity: 1;
+    position: absolute;
+    transform: rotate(-65deg);
+    width: 25%;
+}
+.pinta-menu-info h2::before {
+    background: linear-gradient(90deg, var(--pinta-orange), var(--pinta-blue1) 50%);
+    content: "";
+    font-size: var(--pinta-menu-info-h2-font-size);
+    inset: 100% 9.7365% -35% auto;
+    height: 2px;
+    opacity: 1;
+    position: absolute;
+    width: 63.936%;
+}
+.pinta-menu-info h2 sub {
+    color: var(--pinta-menu-color);
+    font-size: var(--pinta-menu-info-h2-sub-font-size);
+    inset: 100% 0 0 3.65rem;
+    padding: 0 0.25rem;
+    position: absolute;
+    height: 35px;
+}
+.pinta-menu-rx-block {
+    align-items: center;
+    color: var(--pinta-color);
+    display: flex;
+    justify-content: flex-end;
+    letter-spacing: 0.136em;
+    list-style: none;
+    margin-top: -1rem;
+    padding: 2rem 5rem;
+    position: relative;
+    text-transform: uppercase;
+}
+.pinta-menu-rx-block::after {
+    aspect-ratio: 1/1;
+    border: 2px solid var(--pinta-menu-border-color);
+    border-radius: 50%;
+    content: "";
+    inset: auto auto auto 3.735%;
+    position: absolute;
+    transform: translateY(2px);
+    text-transform: uppercase;
+    width: 20px;
+}
+.pinta-menu-rx-block::before {
+    aspect-ratio: 1/1;
+    border: 2px solid #fff0;
+    background-color: var(--pinta-menu-color);
+    border-radius: 50%;
+    content: "";
+    inset: auto auto auto 3.735%;
+    opacity: 0;
+    position: absolute;
+    transition: 0.35s;
+    transform: translateY(2px) scale(0.376);
+    transition: 0.735s;
+    text-transform: uppercase;
+    width: 20px;
+}
+.pinta-menu-rx-block:hover:before {
+    opacity: 1;
+    transform: translateY(2px) scale(0.135);
+}
+.pinta-menu-split:has(.pinta-menu-item:hover) ~ .pinta-menu-rx-block::before {
+    background-color: var(--pinta-menu-anchor-hover-color);
+    opacity: 1;
+}
+.pinta-menu-split:has(ul:nth-of-type(1) > .pinta-menu-item:nth-of-type(1):hover) ~ .pinta-menu-rx-block::before {
+    filter: hue-rotate(27.6deg) brightness(1.376);
+    opacity: 1;
+}
+.pinta-menu-split:has(ul:nth-of-type(1) > .pinta-menu-item:nth-of-type(2):hover) ~ .pinta-menu-rx-block::before {
+    filter: hue-rotate(136deg) brightness(1.736);
+    opacity: 1;
+}
+.pinta-menu-split:has(ul:nth-of-type(2) > .pinta-menu-item:nth-of-type(1):hover) ~ .pinta-menu-rx-block::before {
+    filter: hue-rotate(76deg) brightness(1.236);
+    opacity: 1;
+}
+.pinta-menu-split:has(ul:nth-of-type(2) > .pinta-menu-item:nth-of-type(2):hover) ~ .pinta-menu-rx-block::before {
+    filter: hue-rotate(236deg) brightness(0.976);
+    opacity: 1;
+}
+.pinta-menu-split:has(ul:nth-of-type(3) > .pinta-menu-item:nth-of-type(1):hover) ~ .pinta-menu-rx-block::before {
+    filter: hue-rotate(218deg) brightness(0.976);
+    opacity: 1;
+}
+.pinta-menu-split:has(ul:nth-of-type(4) > .pinta-menu-item:nth-of-type(1):hover) ~ .pinta-menu-rx-block::before {
+    filter: hue-rotate(-185deg) brightness(1.076);
+    opacity: 1;
+}
+.pinta-menu-rx-block .pinta-rx-designed {
+    color: var(--pinta-menu-color);
+    font-family: "Jost", "Inter", sans-serif;
+    font-size: 1.236rem;
+    font-weight: 600;
+    padding: 0 8%;
+    width: unset;
+    text-decoration: none;
+    transform: translateY(-5px) translateX(-15%);
+}
+.pinta-menu-rx-block a {
+    margin: -2.5rem -3.25rem -3.5rem 0;
+    transform: translateX(-1.235rem);
+    width: 8rem;
+}
+.pinta-menu-rx-block img {
+    height: auto;
+    opacity: 1;
+    transform: scale(1.5) translateY(-5px);
+    transition: var(--pinta-standard-transition);
+    width: 100%;
+}
+.pinta-dark .pinta-menu-rx-block img.light,
+.pinta-menu-rx-block img.dark {
+    display: none;
+}
+.pinta-menu-rx-block img.light,
+.pinta-dark .pinta-menu-rx-block img.dark {
+    display: block;
+}
+.pinta-theme-toggle {
+    background-color: #fff0;
+    border: 2px solid var(--pinta-menu-button-border-color);
+    border-radius: 5rem;
+    box-shadow: inset 0 0 18px rgb(0 0 0 / 0.135);
+    height: 30px;
+    inset: 2.35rem 3.736rem auto auto;
+    position: absolute;
+    transition: var(--pinta-slow-transition);
+    width: 54px;
+    z-index: 1;
+}
+.pinta-theme-toggle::after {
+    background-color: #fff0;
+    border: 1px solid var(--pinta-menu-button-border-color);
+    border-radius: 5rem;
+    box-shadow: inset 0 0 18px rgb(0 0 0 / 0.235);
+    content: "";
+    height: 75%;
+    inset: 10% auto 10% 5%;
+    position: absolute;
+    transform: translate(100%);
+    transition: var(--pinta-slow-transition);
+    width: 40%;
+    opacity: 0;
+    z-index: 1;
+}
+.pinta-dark .pinta-theme-toggle {
+    box-shadow: inset 0 0 36px rgb(236 236 236 / 0.276);
+}
+.pinta-dark .pinta-theme-toggle::after {
+    box-shadow: inset 0 0 18px rgb(35 35 35 / 0.735);
+    transform: translateX(0);
+}
+.pinta-theme-toggle img:last-of-type {
+    transition: var(--pinta-slow-transition);
+}
+.pinta-theme-toggle img:last-of-type {
+    inset: calc(50% - 7.5px) auto 0 12.5%;
+    position: absolute;
+    transition: var(--pinta-slow-transition);
+    transform: translateX(-75%) scale(0);
+    width: 15px;
+}
+.pinta-theme-toggle img:first-of-type {
+    inset: calc(50% - 7.5px) 12.5% 0 auto;
+    position: absolute;
+    transition: var(--pinta-slow-transition);
+    transform: translateX(-70%);
+    width: 15px;
+}
+.pinta-dark .pinta-theme-toggle img {
+    filter: invert(1);
+}
+.pinta-dark .pinta-theme-toggle img:first-of-type {
+    opacity: 0;
+    transform: translateX(45%) scale(0);
+}
+.pinta-theme-toggle img:last-of-type {
+    opacity: 0;
+}
+.pinta-dark .pinta-theme-toggle img:last-of-type {
+    opacity: 1;
+    transform: translateX(75%);
+}
+.pinta-menu-icons {
+    display: flex;
+    gap: 1.35rem;
+    flex-flow: row;
+    inset: 148% 12.36% auto auto;
+    position: absolute;
+}
+.pinta-menu-icons a {
+    align-items: center;
+    aspect-ratio: 1/1;
+    background-color: var(--pinta-menu-icon-bg-color);
+    border-radius: 50%;
+    color: var(--pinta-menu-icon-color);
+    display: flex;
+    font-family: "Inter";
+    font-size: var(--pinta-menu-icons-font-size);
+    font-weight: 600;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.635s;
+    width: 45px;
+}
+.pinta-menu-icons a:hover {
+    background-color: var(--pinta-menu-icon-color);
+    color: var(--pinta-menu-icon-bg-color);
+    transform: scale(1.135);
+}
+.pinta-menu-icons a:first-of-type::after {
+    background: url(../img/icons/github-142-svgrepo-com.svg);
+    background-size: contain;
+    background-position: center;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scale(1.135);
+}
+.pinta-menu-icons a:nth-of-type(3)::after {
+    background: url(../img/icons/forum-svgrepo-com.svg);
+    background-size: contain;
+    background-position: center;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scale(1.135);
+}
+.pinta-menu-icons a:hover:after {
+    filter: invert(1);
+}
+.pinta-menu-icons .pinta-news,
+.pinta-menu-icons .pinta-news:hover {
+    aspect-ratio: unset;
+    background: none;
+    border-radius: 4px;
+    color: var(--pinta-menu-color);
+    font-family: var(--pinta-header-font-family);
+    font-size: 93.6%;
+    font-weight: 400;
+    inset: auto 0 -65px 0;
+    line-height: 1;
+    padding: 8px 0 10px 0;
+    position: absolute;
+    text-transform: lowercase;
+    transform: none;
+    transition: var(--pinta-slow-transition);
+    width: 100%;
+    z-index: 1;
+}
+.pinta-menu-icons .pinta-news:hover {
+    color: #fff;
+}
+.pinta-news::after {
+    border: 2px solid var(--pinta-orange);
+    border-radius: 4px;
+    content: "";
+    inset: 0;
+    opacity: 0.376;
+    position: absolute;
+    z-index: -2;
+}
+.pinta-news::before {
+    background: var(--pinta-action-button0-hover-bg);
+    border-radius: 4px;
+    content: "";
+    inset: 0;
+    opacity: 0;
+    position: absolute;
+    transition: var(--pinta-slow-transition);
+    z-index: -1;
+}
+.pinta-news:hover:before {
+    opacity: 1;
+}
+.pinta-news.pinta-disabled {
+    opacity: 0.8;
+    pointer-events: none;
+}
+.pinta-news.pinta-disabled::after {
+    border-color: var(--pinta-blue1);
+}
+.pinta-headline {
+    background-color: #355085;
+    height: 760px;
+    margin-top: var(--pinta-nav-height);
+    overflow: hidden;
+    position: relative;
+}
+.pinta-headline img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.pinta-headline .pinta-headline-container {
+    align-items: center;
+    color: var(--pinta-headline-color);
+    display: flex;
+    flex-flow: column;
+    font-family: "Inter", "Jost", sans-serif;
+    font-size: var(--pinta-headline-font-size);
+    font-weight: 600;
+    inset: 0;
+    justify-content: center;
+    margin: 85px 5rem 5rem 5rem;
+    position: absolute;
+    text-shadow: 0 3px 5px rgb(0 0 0 / 0.236);
+    text-align: center;
+    z-index: 1;
+}
+.pinta-headline .pinta-headline-container::before {
+    border-radius: 27.36px;
+    content: "";
+    filter: blur(0.36px);
+    inset: 12.736% 29.36%;
+    position: absolute;
+    z-index: -1;
+}
+.pinta-headline h1 {
+  align-items: center;
+  color: var(--pinta-headline-color);
+  display: flex;
+  font-family: "Baumans", "Jost", sans-serif;
+  font-size: var(--pinta-headline-font-size);
+  font-size: clamp(76px, 4.736vw, 4.736vw);
+  font-weight: 600;
+  justify-content: center;
+  text-align: center;
+}
+.pinta-sub .pinta-page-heading,
+.pinta-headline h1 {
+  text-shadow: 0 3.736px 9.376px rgb(36, 36, 36, .376);
+}
+@supports (-moz-appearance: none) {
+  .pinta-sub .pinta-page-heading,
+  .pinta-headline h1 {
+    text-shadow: 0 4.736px 9.736px rgb(36, 36, 36, .936);
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @supports (-webkit-appearance: none) and (not (-webkit-touch-callout: none)) {
+    .pinta-sub .pinta-page-heading,
+    .pinta-headline h1 {
+      text-shadow: 0 4.736px 8.736px rgba(36, 36, 36, 0.936) !important;
+    }
+  }
+}
+.safari .pinta-sub .pinta-page-heading,
+.safari .pinta-headline h1 {
+  text-shadow: 0 4.736px 9.736px rgba(36, 36, 36, 0.376) !important;
+}
+.pinta-headline .pinta-headline-container p {
+    font-family: "Baumans", "Jost", sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    max-width: 736px;
+    padding: 20px 15px 15px 15px;
+    text-shadow: 0 2px 7px rgb(36 36 36 / 0.576);
+    text-align: center;
+}
+.pinta-hero-nav {
+    align-item: center;
+    color: var(--pinta-headline-color);
+    font-weight: 300;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 35px;
+}
+.pinta-hero-nav a {
+    align-items: center;
+    backdrop-filter: blur(8px);
+    background: #fff0;
+    border-radius: 6px;
+    box-shadow: 0 7px 18px rgb(0 0 0 / 0.236);
+    color: var(--pinta-headline-link-color);
+    display: flex;
+    flex-flow: row;
+    font-weight: 400;
+    overflow: clip;
+    height: fit-content;
+    justify-content: center;
+    min-width: 27.6rem;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition: 0.635s;
+    width: 100%;
+}
+.pinta-hero-nav a::before,
+.pinta-hero-nav a::after {
+    content: "";
+    inset: 0;
+    opacity: 1;
+    position: absolute;
+    transition: opacity 0.736s;
+}
+.pinta-hero-nav a::after {
+    z-index: -2;
+}
+.pinta-hero-nav a::before {
+    z-index: -1;
+}
+.pinta-hero-nav a:first-of-type:after {
+    background: #353535;
+}
+.pinta-hero-nav a:last-of-type:after {
+    background: var(--pinta-hero-action-button0-bg);
+}
+.pinta-hero-nav a:first-of-type:before,
+.pinta-hero-nav a:last-of-type:before {
+    background: var(--pinta-action-button0-hover-bg);
+    opacity: 0;
+}
+.pinta-hero-nav a:first-of-type:hover:before,
+.pinta-hero-nav a:last-of-type:hover:before {
+    opacity: 1;
+}
+.pinta-hero-nav a img {
+    margin: 0 0 0 auto;
+    opacity: 0.25;
+    transition: opacity 0.736s, transform 0.736s;
+    height: 36px;
+    width: auto;
+}
+.pinta-hero-nav a:hover img {
+    opacity: 1;
+    transform: translateX(-5px);
+}
+.pinta-hero-nav a div {
+    margin: 0 0 0 auto;
+    transform: translateY(-1px);
+}
+.pinta-main {
+    line-height: 5rem;
+    max-width: 100vw;
+}
+.pinta-page-heading {
+  display: flex;
+  font-family: "Baumans", "Inter", sans-serif;
+  font-size: 180%;
+  font-weight: 400;
+  letter-spacing: 0.136vw;
+  margin: 0 auto;
+  padding: 0 0 23.6px 0;
+  justify-content: center;
+  position: relative;
+  text-transform: lowercase;
+  text-align: center;
+  width: fit-content;
+}
+.pinta-heading2 {
+  display: flex;
+  font-family: "Baumans", "Inter", sans-serif;
+  font-size: clamp(18px, 3.765rem, 3.765rem);
+  font-weight: 400;
+  padding: 0 0 18px 0;
+  position: relative;
+  width: fit-content;
+}
+.pinta-heading2,
+.pinta-page-heading {
+  color: var(--pinta-homepage-h2-color);
+}
+.pinta-description-box h2::after,
+.pinta-heading2::after,
+.pinta-page-heading::after {
+  background: var(--pinta-docs-h2-underline-bg);
+  border-radius: 8px;
+  content: '';
+  height: 2px;
+  inset: 100% auto auto auto;
+  margin: 0;
+  max-width: 97.6%;
+  position: absolute;
+  width: 100%;
+}
+.pinta-text-column {
+    flex-flow: column;
+    margin: 3rem 0 0 0;
+}
+.pinta-text-centered {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.pinta-text {
+    display: flex;
+    color: var(--pinta-color);
+    padding: 5rem 7.936vw;
+}
+.pinta-text .pinta-article {
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+}
+.pinta-text p {
+    color: var(--pinta-color);
+    line-height: 2;
+    font-size: 135%;
+}
+.pinta-text em {
+    font-size: 102.5%;
+    font-weight: 300;
+}
+.pinta-text + .pinta-text {
+    margin: 1.736rem 0 9.736rem 0;
+}
+.pinta-text > * > p {
+    margin: 3.735rem 0;
+}
+.pinta-grid-item-container {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    justify-content: space-around;
+    margin: 5rem 0;
+    width: 100%;
+}
+.pinta-grid-item {
+    aspect-ratio: 1/1;
+    background-color: var(--pinta-article-bg-color);
+    border: 0.135rem solid var(--pinta-menu-button-border-color);
+    border-radius: 8px;
+    display: flex;
+    max-width: 39.35rem;
+    position: relative;
+}
+.pinta-grid-item figure {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.pinta-grid-item img {
+    aspect-ratio: 1/1;
+    width: 46.35%;
+}
+.pinta-grid-item .pinta-label {
+    align-items: center;
+    background-color: var(--pinta-label-bg-color);
+    border-radius: 5px;
+    display: flex;
+    font-size: var(--pinta-label-font-size);
+    font-weight: 400;
+    justify-content: center;
+    color: var(--pinta-label-color);
+    inset: calc(100% - 4.735rem) 1rem 1.235rem 1rem;
+    letter-spacing: 0.365rem;
+    padding: 0.235rem 0 0 0;
+    position: absolute;
+    text-transform: uppercase;
+}
+.pinta-grid-item:nth-of-type(2) .pinta-label {
+    filter: hue-rotate(135deg);
+}
+.pinta-grid-item:nth-of-type(3) .pinta-label {
+    filter: hue-rotate(205deg) saturate(1.35) brightness(1.035);
+}
+.pinta-description-box {
+    border-radius: 8px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+}
+.pinta-description-box article {
+    border-left: none;
+    border-right: none;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.pinta-description-box:last-of-type article {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.pinta-description-box figure {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: auto;
+}
+.pinta-description-box img {
+    width: 100%;
+}
+.pinta-description-box a {
+    color: var(--pinta-link-color);
+}
+.pinta-description-box .pinta-article {
+    align-items: start;
+    flex: 1;
+    justify-content: flex-start;
+    flex-flow: column;
+    margin: 3.765rem 0;
+}
+.pinta-description-box h2 + .pinta-article {
+    margin: 0;
+}
+.pinta-description-box:last-of-type .pinta-article {
+    margin: 3.765rem 0 0 0;
+}
+.pinta-description-box:last-of-type h2 + .pinta-article {
+    margin: 0;
+}
+.pinta-description-box h2 {
+    color: var(--pinta-h2-color);
+    font-family: var(--pinta-header-font-family);
+    font-size: var(--pinta-article-h2-font-size);
+    font-weight: 300;
+    margin: 0;
+    padding: clamp(25px, 5vw, 35px) 0;
+}
+.pinta-dark .pinta-description-box h2 {
+    color: var(--pinta-color);
+    text-align: center;
+}
+.pinta-description-box .pinta-article p {
+    display: flex;
+    font-size: var(--pinta-font-size);
+    font-weight: 300;
+    margin: 0 5rem 2rem 0;
+}
+.pinta-button-group {
+    flex-flow: row wrap;
+}
+.pinta-button-group * {
+    flex: 1;
+}
+.pinta-button-group a:last-child {
+    filter: hue-rotate(-85deg);
+}
+.pinta-button-group a:last-child:hover {
+    filter: hue-rotate(-185deg) saturate(2) brightness(1.135) grayscale(0.236);
+}
+.rx-logo a,
+.pinta-button,
+a.pinta-button,
+.pinta-block .pinta-button,
+.pinta-docs .pinta-button,
+.pinta-cta-closer a {
+    background: none;
+    border: none;
+    border-radius: var(--pinta-button-border-radius);
+    color: var(--pinta-button-color);
+    cursor: pointer;
+    filter: none;
+    font-family: var(--pinta-button-font-family);
+    font-weight: 400;
+    padding: 0.45rem 5rem 0.5rem 5rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: lowercase;
+    transition: var(--pinta-button-transition);
+    white-space: nowrap;
+}
+.pinta-button {
+    margin: 2rem 0.5rem;
+}
+.pinta-button:hover,
+.pinta-docs .pinta-button:hover,
+.pinta-cta-closer a:hover,
+.pinta-button:hover {
+    filter: none;
+    color: var(--pinta-button-color);
+}
+.pinta-button::after,
+.pinta-button::before,
+.pinta-cta-closer a::after,
+.pinta-cta-closer a::before {
+    border-radius: var(--pinta-button-border-radius);
+    content: "";
+    inset: 0;
+    position: absolute;
+    transition: var(--pinta-button-transition);
+}
+.pinta-button::after {
+    background: var(--pinta-button-bg);
+    z-index: -2;
+}
+.pinta-button::before {
+    opacity: 0;
+    z-index: -1;
+}
+.pinta-button::before {
+    background: var(--pinta-button-hover-bg);
+}
+.pinta-cta-closer a:hover:before,
+.pinta-button:hover::before {
+    opacity: 1;
+}
+.pinta-cta-closer a {
+    padding: 0.45rem 5rem 0.75rem 5rem;
+    margin: 35px auto 0 auto;
+    z-index: 1;
+}
+.pinta-cta-closer a::after {
+    background: var(--pinta-action-button0-bg);
+    box-shadow: 0 9px 17.6px rgb(0 0 0 / 0.236);
+    z-index: -2;
+}
+.pinta-cta-closer a::before {
+    background: var(--pinta-action-button0-hover-bg);
+    opacity: 0;
+    z-index: -1;
+}
+.pinta-footer .rx-logo a {
+    aspect-ratio: 1024/300;
+    position: relative;
+    min-width: 400px;
+    margin: 0 0 45px 0;
+    width: 100%;
+}
+.pinta-footer .rx-logo figure {
+    display: flex;
+    inset: 0;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    transition: opacity var(--pinta-slower-transition);
+}
+.pinta-footer .rx-logo a:hover figure:nth-of-type(1),
+.pinta-footer .rx-logo figure:nth-of-type(2) {
+    opacity: 0;
+}
+.pinta-footer .rx-logo a:hover figure:nth-of-type(2) {
+    opacity: 1;
+    transition: opacity var(--pinta-slow-transition);
+}
+.pinta-footer .rx-logo img {
+    max-width: 400px;
+    width: 100%;
+}
+.pinta-footer {
+    background-color: var(--pinta-footer-bg-color);
+    color: var(--pinta-footer-color);
+    display: flex;
+    flex-flow: column;
+    min-height: 35rem;
+}
+.pinta-footer > * {
+    flex: 1;
+}
+.pinta-footer-box-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2rem 5rem 0 5rem;
+}
+.pinta-footer-box {
+    align-self: stretch;
+    align-content: center;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    height: 100%;
+    justify-content: center;
+    margin: 2rem 1.35rem;
+    max-width: calc(33% - 1.35rem);
+    padding: 1rem 2rem;
+}
+.pinta-footer-box > h2 {
+    font-weight: 400;
+    margin: 2.5% 2.5% 0 2.5%;
+    width: 100%;
+}
+.pinta-footer-box > p {
+    margin: 2.5% 5% 2.5% 5%;
+}
+.pinta-footer-link-box {
+    display: flex;
+    flex-flow: row;
+    margin: 2.35rem 1.35rem;
+    padding: 0;
+    width: 100%;
+}
+.pinta-footer-link-box .pinta-footer-link-header {
+    display: flex;
+    font-family: var(--pinta-header-font-family);
+    justify-content: flex-start;
+    margin: 0 auto 5% 0;
+    position: relative;
+    width: auto;
+}
+.pinta-footer-link-box-separator {
+    width: 100%;
+}
+.pinta-footer-link-box .pinta-footer-link-header div {
+    inset: 0;
+    position: absolute;
+}
+.pinta-footer-link-box .pinta-footer-link-header div::after {
+    background: var(--pinta-docs-h2-underline-bg);
+    content: "";
+    height: 3px;
+    inset: 100% 15% auto 0;
+    position: absolute;
+}
+.pinta-footer-link-box .pinta-footer-link-header::before,
+.pinta-footer-link-box .pinta-footer-link-header::after {
+    content: ":";
+    display: flex;
+    font-family: var(--pinta-header-font-family);
+    justify-content: center;
+    letter-spacing: 0.376em;
+}
+.pinta-footer-link-box .pinta-footer-link-header::after {
+    padding: 0 0 0 5px;
+}
+.pinta-footer-link-box .pinta-footer-link-header::before {
+    padding: 0 5px;
+    display: none;
+}
+.pinta-footer-nav-block {
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+}
+.pinta-footer-link-box {
+    display: flex;
+    flex-flow: row;
+    margin: 1% 0 0.25% 0;
+    padding: 0.235% 0;
+}
+.pinta-footer-link-box li + .pinta-footer-headline {
+    margin: 5% 0;
+}
+.pinta-footer-link-box a {
+    color: var(--pinta-orange);
+    font-size: 95%;
+    font-weight: 400;
+    padding: 0.236rem 0 0 0;
+    position: relative;
+    text-decoration: none;
+    transition: color var(--pinta-slow-transition);
+}
+.pinta-footer-link-box a:hover {
+    color: var(--pinta-blue1);
+}
+.pinta-footer-address-box li {
+    margin: 0 0 0 -0.835rem;
+}
+.pinta-footer-box ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    line-height: 4.35rem;
+    list-style-type: none;
+    margin: 0 0.236rem;
+}
+.pinta-footer-box li {
+    display: flex;
+    font-size: var(--pinta-footer-box-font-size);
+    height: fit-content;
+    justify-content: center;
+    position: relative;
+}
+.pinta-footer-box .pinta-footer-headline {
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.pinta-footer-box > p {
+    text-align: center;
+}
+.pinta-footer-headline::before {
+    display: none;
+    font-weight: 400;
+    margin-left: -15rem;
+}
+.pinta-footer-headline::after {
+    display: none;
+    font-weight: 400;
+    margin-left: -15rem;
+}
+.pinta-footer-headline h2 {
+    font-size: 105%;
+    font-weight: 400;
+    margin: 0 auto 7.396% auto;
+    position: relative;
+}
+.pinta-footer-headline h2::after {
+    background: var(--pinta-docs-h2-underline-bg);
+    content: "";
+    height: 2px;
+    inset: 100% 0 auto 0;
+    position: absolute;
+}
+.pinta-footer .rx-logo {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.pinta-footer-box > p a {
+    color: var(--pinta-orange);
+    font-weight: 400;
+    text-decoration: none;
+    transition: color var(--pinta-slow-transition);
+}
+.pinta-footer-box > p a:hover {
+    color: var(--pinta-blue1);
+}
+.pinta-footer .pinta-disabled {
+    color: var(--pinta-menu-color);
+    opacity: 0.736;
+    pointer-events: none;
+}
+.pinta-socials {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 35px auto;
+    max-width: 400px;
+}
+.pinta-socials .pinta-news:hover,
+.pinta-socials .pinta-news {
+    aspect-ratio: unset;
+    background: none;
+    border-radius: 8px;
+    color: #fff;
+    filter: none;
+    font-family: var(--pinta-header-font-family);
+    font-size: 97.6%;
+    font-weight: 400;
+    margin: 24px auto 0 auto;
+    position: relative;
+    padding: 1px 0 2px 0;
+    width: 50%;
+    z-index: 1;
+}
+.pinta-socials .pinta-news::after {
+    border: 1px solid var(--pinta-orange);
+    border-radius: 8px;
+}
+.pinta-socials .pinta-news::before {
+    border-radius: 8px;
+}
+.pinta-socials a {
+    align-items: center;
+    aspect-ratio: 1/1;
+    background: #000;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    transition: var(--pinta-slow-transition);
+    width: 60px;
+}
+.pinta-socials a:hover {
+    filter: invert(1);
+    transform: scale(1.135);
+}
+.pinta-socials img {
+    max-width: 50px;
+    transition: var(--pinta-slow-transition);
+}
+@media only screen and (max-width: 1600px) {
+    .pinta-text {
+        padding: 2rem 2.936vw 0 2.936rem;
+    }
+    .pinta-text + .pinta-text {
+        margin: 0;
+    }
+    .pinta-photo img {
+        max-width: 500px;
+    }
+    .pinta-text .pinta-article {
+        width: unset;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    :root {
+        font-size: 10px;
+    }
+    .pinta-footer-box-container {
+        margin: 2rem 1rem 0 1rem;
+    }
+    .pinta-footer-box-container {
+        flex-flow: column;
+    }
+    .pinta-footer-box {
+        flex-flow: row wrap;
+        margin: 0 0 5% 0;
+        max-width: unset;
+    }
+    .pinta-footer-nav-block {
+        min-width: 23.76%;
+        flex: 1;
+        padding: 0 18px 0 18px;
+        width: unset;
+    }
+    .pinta-footer-box .pinta-footer-headline {
+        padding: 21px 0;
+        justify-content: flex-start;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .pinta-text {
+        flex-flow: column;
+    }
+    .pinta-photo {
+        order: -1;
+        margin: 3.736% auto;
+    }
+    .pinta-main {
+        line-height: 5rem;
+        padding: 0;
+    }
+    .pinta-description-box figure img {
+        width: 50%;
+    }
+    .pinta-description-box .pinta-article p {
+        font-size: 2.35rem;
+        margin: 2rem 0;
+    }
+    .pinta-description-box .pinta-article h2 {
+        margin: 2rem 0;
+    }
+    .pinta-description-box .pinta-button {
+        margin: 2rem 0.5rem;
+        width: 100%;
+    }
+    .pinta-cta-group {
+        flex-flow: column;
+    }
+    .pinta-cta-block {
+        margin: 0 auto 8rem auto;
+        width: 85%;
+    }
+    .pinta-cta-block p {
+        inset: auto 5% -6.5rem 5%;
+        font-size: 50%;
+        font-weight: 600;
+        letter-spacing: 1.236vw;
+    }
+    .pinta-cta-closer {
+        padding: 2rem 3rem 3rem 3rem;
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .pinta-footer-nav-block {
+        min-width: 50%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    :root {
+        --pinta-nav-height: 50px;
+        --pinta-article-h2-font-size: clamp(23px, 3.736rem, 3.936rem);
+    }
+    .pinta-title span {
+        transform: translateX(-26.376px);
+    }
+    .pinta-docs code {
+        background: var(--pinta-docs-code-bg-color);
+        border: 1px solid var(--pinta-blue0);
+        border-radius: 7.936px;
+        color: var(--pinta-blue1);
+        font-weight: 400;
+        margin: 10px;
+        padding: 13.65px clamp(9.376px, 36px, 7.365vw);
+        display: flex;
+        word-wrap: anywhere;
+    }
+    .pinta-headline h1 {
+        font-size: clamp(55px, 13.736vw, 13.736vw);
+        line-height: 1.5;
+        padding: 7.376vw 7.376vw 9.796% 7.376vw;
+    }
+    .pinta-headline {
+        transform: translateY(-2.376%);
+    }
+    .pinta-headline .pinta-headline-container p {
+        font-size: 30px;
+    }
+    ..pinta-menu-rx-block .pinta-rx-designed {
+        font-size: 45%;
+        margin: 0 auto 0 0;
+        padding: 0;
+    }
+    .pinta-menu-rx-block img:hover,
+    .pinta-menu-rx-block img {
+        transform: scale(1.25);
+    }
+    .pinta-main {
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+    }
+    .pinta-text {
+        padding: 2rem 0 0 0;
+        width: 80%;
+    }
+    .pinta-text p {
+        font-size: 123.376%;
+    }
+    .pinta-photo {
+        margin: 5rem auto;
+        width: 80%;
+    }
+    .pinta-photo img {
+        max-width: 100%;
+    }
+    .pinta-title {
+        width: 100px;
+    }
+    .pinta-headline span {
+        align-items: flex-start;
+        font-size: clamp(23px, 17.35vw, 37.6px);
+        padding: 15% 0 0 0;
+    }
+    .pinta-menu {
+        border-radius: 0;
+        height: unset;
+        inset: var(--pinta-nav-height) 0 0 0;
+        max-height: calc(100vh - var(--pinta-nav-height));
+        max-width: 100vw;
+        position: fixed;
+    }
+    .pinta-menu-info {
+        flex-flow: column;
+        margin: 0;
+    }
+    .pinta-menu-info figure {
+        font-size: 0;
+        aspect-ratio: 1/1;
+        height: unset;
+        margin: 7.936% auto;
+        width: 47.376%;
+    }
+    .pinta-menu-info h2 {
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        margin: 10% auto 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+    .pinta-menu-info h2::after,
+    .pinta-menu-info h2::before {
+        display: none;
+    }
+    .pinta-menu-info h2 sub,
+    .pinta-menu-icons {
+        inset: unset;
+        margin: 5% auto;
+        padding: 0;
+        position: relative;
+        text-align: center;
+    }
+    .pinta-menu-icons {
+        margin: 12.736% auto 36px auto;
+    }
+    .pinta-text article {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+    }
+    .pinta-description-box figure img {
+        width: 100%;
+    }
+    .pinta-text p {
+        margin: 1rem 0;
+    }
+    .pinta-heading2 {
+        font-size: var(--pinta-article-h2-font-size);
+        float: none;
+        justify-content: center;
+        margin: 0;
+        order: -1;
+        text-align: center;
+        width: 100%;
+    }
+    .pinta-title .pinta-title-tagline {
+        display: none !important;
+    }
+    .pinta-footer-box-container {
+        display: block;
+        margin: 0;
+    }
+    .pinta-footer-box {
+        padding: 1rem 2.736vw;
+        margin: 0;
+    }
+    .pinta-footer-box ul {
+        padding: 5vw;
+        margin: 0;
+    }
+    .pinta-footer-headline {
+        margin: 0;
+    }
+    .pinta-footer-link-box li:not(.pinta-footer-headline) {
+        margin: 5% 0 0 0;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .pinta-hero-nav {
+        flex-flow: column;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .pinta-menu-split h2 {
+        padding: 25px 25px 15px 45px;
+        width: 100%;
+    }
+    .pinta-menu-split {
+        flex-flow: column;
+    }
+    .pinta-menu-split ul {
+        margin: 2% 1%;
+        max-width: unset;
+        width: auto;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .pinta-footer .rx-logo a {
+        aspect-ratio: 1024/300;
+        position: relative;
+        min-width: 93.6vw;
+        margin: 0 0 45px 0;
+        width: 100%;
+    }
+    .pinta-footer-link-box .pinta-footer-link-header {
+        margin: 0 73.6% 2.376% 73.6%;
+    }
+    .pinta-footer-link-box .pinta-footer-link-header div::after {
+        inset: 100% 0 auto 0;
+        position: absolute;
+    }
+    .pinta-footer-link-box .pinta-footer-link-header::before,
+    .pinta-footer-link-box .pinta-footer-link-header::after {
+        content: ":::";
+    }
+    .pinta-footer-link-box,
+    .pinta-footer-link-box .pinta-footer-nav-block,
+    .pinta-footer-link-box a,
+    .pinta-footer-link-box .pinta-footer-link-header {
+        display: flex;
+        justify-content: center;
+    }
+    .pinta-footer-link-box .pinta-footer-link-header::before {
+        display: initial;
+    }
+    .pinta-footer-link-box .pinta-footer-link-header {
+        display: flex;
+        font-family: var(--pinta-header-font-family);
+        justify-content: center;
+        margin: 0 0 5% 0;
+        width: 100%;
+    }
+    .pinta-footer-box ul {
+        flex-flow: column;
+    }
+    .pinta-footer-headline h2 {
+        margin: 0 auto;
+    }
+    .pinta-footer-link-box li:not(.pinta-footer-headline) {
+        justify-content: center;
+        margin: 2.35% auto 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+    .pinta-footer-link-box li a {
+        padding: 1.796% 0;
+    }
+    .pinta-footer-box > p {
+        text-align: center;
+    }
+    .pinta-hero-nav a {
+        justify-content: center;
+        min-width: unset;
+        padding: 1rem 1rem 1rem 1.35rem;
+        width: 100%;
+    }
+    .pinta-headline {
+        min-height: unset;
+        padding: 0;
+    }
+    .pinta-headline .pinta-headline-container {
+        align-items: flex-start;
+        font-size: clamp(18px, 12.35vw, 32.6px);
+        padding: 0;
+        margin: 35px 5vw;
+    }
+    .pinta-headline .pinta-headline-container p {
+        font-size: 24px;
+        padding: 20px 0 15px 0;
+    }
+    .pinta-hero-nav {
+        inset: calc(100% - 27.35rem) 0 auto 0;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        width: 97.6%;
+    }
+    .pinta-hero-nav a {
+        margin: 2.5% 0;
+    }
+    .pinta-download-button {
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        height: unset;
+        transform: scale(0.736);
+        padding: 0;
+    }
+    .pinta-download-button div {
+        margin: 0;
+    }
+    .pinta-download-button span {
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .pinta-hero-nav a {
+        margin: 2% auto;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .pinta-headline h1 {
+        font-size: clamp(45px, 12.736vw, 12.736vw);
+        line-height: 1.5;
+        padding: 7.376vw 2.376vw 23.796% 2.376vw;
+    }
+    .pinta-headline {
+        transform: translateY(-12.376%);
+        margin-bottom: -29.796%;
+    }
+    .pinta-menu-rx-block .pinta-rx-designed {
+        transform: scale(0.75) translateX(-32.5%) translateY(-15%);
+    }
+}
+.nooverflow {
+    overflow-y: hidden !important;
+}
+@media (pointer: coarse) {
+    :root {
+        --pinta-action-button0-hover-bg: var(--pinta-action-button0-bg);
+    }
+    .pinta-hero-nav a:first-of-type:hover:before,
+    .pinta-hero-nav a:last-of-type:hover:before {
+        opacity: 0;
+    }
+    .pinta-menu-button.active div::after,
+    .pinta-menu-button.active div::before {
+        filter: invert(0);
+    }
+    .pinta-menu-button.active:hover div::after,
+    .pinta-menu-button.active:hover div::before {
+        background: #fff;
+        filter: invert(0);
+    }
+    .pinta-menu-button:hover div::after,
+    .pinta-menu-button:hover div::before {
+        filter: none;
+        background: var(--pinta-color);
+    }
+    .pinta-menu-button:hover:after {
+        opacity: 0;
+    }
+    .pinta-menu-button.active:after {
+        opacity: 1;
+    }
+}
+@media (pointer: fine) {
+    .pinta-menu-button:hover img {
+        filter: invert(0);
+    }
+    .pinta-menu-button.active img {
+        filter: invert(0);
+    }
+    .pinta-menu-button:hover div {
+        background: #fff;
+    }
+}

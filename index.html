@@ -1,100 +1,236 @@
----
-layout: default
-title: "Pinta: Painting Made Simple"
----
-<div class="jumbotron">
-    <div class="hero-image-div pull-right">
-        <a href="/theme/images/ss1.png"><img class="hero-image" src="/theme/images/ss1-thumb.png" /></a>
-    </div>
+<!DOCTYPE html>
+<html lang="en" class="pinta-dark">
+  <head>
+    <style media="screen">
+      html {
+        opacity: 0;
+        transition: opacity 0.1s ease-in-out;
+      }
 
-    <h1>Pinta: Painting Made Simple</h1>
-    <p>Pinta is a free, open source program for drawing and image editing.</p>
-    <p>Its goal is to provide users with a simple yet powerful way to draw and manipulate images on Linux, Mac, Windows, and *BSD.</p>
-    <p><a class="btn btn-primary" role="button" href="/releases">Download&nbsp;&nbsp;&raquo;</a></p>
-    <span>Current Version: {{site.release.version}} - <a href="{{site.release.release_notes}}">Release Notes</a></span>
-</div>
+      html[data-theme] {
+        opacity: 1;
+      }
+    </style>
 
-<div class="feature-container">
-    <div class="box pull-left feature-box" style="margin-left: 0;">
-        <div class="box-header">
-            <span class="title">Basics</span>
+    <script>
+      (function() {
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme === 'light') {
+            document.documentElement.classList.remove('pinta-dark');
+            document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+            document.documentElement.classList.add('pinta-dark');
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pinta : Painting Made Simple</title>
+
+    <script src="js/pinta-theme.js" defer charset="utf-8"></script>
+
+    <link rel="preload" as="image" href="img/photos/hero.webp" type="image/webp">
+    <link rel="preload" href="css/fonts/Baumans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="css/fonts.css" as="style">
+
+    <meta property="og:title" content="Pinta: Painting Made Simple">
+    <meta property="og:description" content="Pinta is a free, open-source program for drawing and image editing. It combines powerful features with an easy-to-use interface, making creativity seamless. Available for Linux, Mac, Windows, and *BSD.">
+    <meta property="og:image" content="img/pinta-og.webp">
+    <meta property="og:url" content="https://pinta-project.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Pinta">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Pinta: Painting Made Simple">
+    <meta property="twitter:description" content="Create and edit images effortlessly with Pinta, the open-source painting and image editing tool for Linux, Mac, Windows, and *BSD.">
+    <meta property="twitter:image" content="pinta-og.webp">
+    <meta name="description" content="Pinta is a free, open-source painting and image editing program designed for simplicity and power. Available on Linux, Mac, Windows, and *BSD, it offers an intuitive interface, unlimited undo, real-time effects, and essential tools to enhance creativity effortlessly.">
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/pinta.css">
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+
+  <body id="pinta">
+
+    <button class="pinta-theme-toggle" type="button" name="theme-toggle" aria-label="Toggle The Theme" id="pinta-theme-switcher">
+      <img src="img/icons/theme/sun.svg" alt="">
+      <img src="img/icons/theme/moon.svg" alt="">
+    </button>
+
+    <!--This section contains the hero and more-->
+    <header class="pinta-headline">
+      <img src="img/photos/hero.webp" alt="">
+      <div class="pinta-headline-container">
+        <h1 class="">
+          painting made simple
+        </h1>
+        <nav class="pinta-hero-nav">
+          <a href="http://github.com/PintaProject"><div>explore the code</div><img src="img/icons/downloads/github.svg" alt="" loading="lazy"></a>
+          <a href="releases"><div>experience pinta</div><img src="img/icons/downloads/check-releases.svg" alt="" loading="lazy"></a>
+        </nav>
+      </div>
+    </header>
+
+    <!--This section contains the page content-->
+    <main class="pinta-main">
+      <section class="pinta-text pinta-text-column">
+        <h2 class="pinta-page-heading">powerful. precise. open-source.</h2>
+        <article class="pinta-text-centered" style="margin-bottom: 0;">
+          <p>Pinta is a free, open-source program for drawing and image editing.
+            It combines intuitive tools with powerful features, making it easy
+            to create, enhance, and manipulate images. Whether you're sketching
+            or retouching photos, Pinta keeps things simple without sacrificing
+            functionality.</p>
+          <p>Available on Linux, Mac, Windows, and *BSD, it’s
+            creative freedom made easy.</p>
+        </article>
+      </section>
+
+      <section class="pinta-text">
+        <figure class="pinta-photo">
+          <img src="img/home/smoothflow.webp" alt="" loading="lazy">
+        </figure>
+        <article class="pinta-article">
+          <h2 class="pinta-heading2">
+            smooth workflow
+          </h2>
+          <p>
+            Life is best lived <em>uncomplicated</em>, and that’s the
+            foundation of Pinta’s intuitive, streamlined approach to image
+            editing. With a clean, direct approach to visual editing, creating
+            feels seamless and natural.
+          </p>
+          <p>
+            Work <em>happier</em>, not harder—Pinta’s efficient design is
+            perfect for anyone, at any level. New and experienced users alike
+            will love the journey from inception to completion.
+          </p>
+        </article>
+      </section>
+
+      <section class="pinta-text">
+        <figure class="pinta-photo pinta-photo-right pinta-photo-swap">
+          <div class="">
+            <img src="img/home/interface-dark.webp" alt="" class="pinta-photo-swap-dark" loading="lazy">
+          </div>
+          <div class="">
+            <img src="img/home/interface-light.webp" alt="" class="pinta-photo-swap-light" loading="lazy">
+          </div>
+        </figure>
+        <article class="pinta-article">
+          <h2 class="pinta-heading2">
+            familiar interface
+          </h2>
+          <p>
+            Jump right in with the tools you know and love. Whether you're
+            using the essentials, like select, crop, rotate or resize, or
+            wielding advanced features like clone, recolor, or magic wand,
+            Pinta <em>just works</em>.
+          </p>
+          <p>
+            The best tools do <em>just</em> what you need, just how <em>you</em>
+            want—then get out of the way. Pinta lets you focus on creating,
+            staying <em>flexible</em> so you can <em>stay in control</em>.
+          </p>
+        </article>
+      </section>
+
+      <section class="pinta-text">
+        <figure class="pinta-photo">
+          <img src="img/home/effects.webp" alt="" loading="lazy">
+        </figure>
+        <article class="pinta-article">
+          <h2 class="pinta-heading2">
+            quick, powerful effects
+          </h2>
+          <p>
+            With a wide array of effects and adjustments, you can get real
+            results <em>in real-time</em>, thanks to live previews that respond
+            as you make your tweaks.
+          </p>
+          <p>
+            Step beyond the pixels with a wide array of brilliant effects you
+            can apply on the fly. Bring new life to photos and other images
+            without the hassle of manual transformations.
+          </p>
+        </article>
+      </section>
+
+      <section class="pinta-text">
+        <figure class="pinta-photo pinta-photo-right">
+          <img src="img/home/undo.webp" alt="" loading="lazy">
+        </figure>
+        <article class="pinta-article">
+          <h2 class="pinta-heading2">
+            unlimited undo
+          </h2>
+          <p>
+            Missed a step? No problem—Pinta lets you keep moving <em>without
+            hesitation.</em> Just retrace your actions and pick up where you
+            left off.
+          </p>
+          <p>
+            Whether you're fine-tuning or exploring new ideas, Pinta gives you
+            the <em>freedom</em> to experiment, knowing no mistake is ever
+            permanent.
+          </p>
+        </article>
+      </section>
+
+      <section class="pinta-cta-group">
+        <div class="pinta-cta-heading-container">
+          <h2 class="pinta-heading2">
+            why choose pinta?
+          </h2>
         </div>
+        <article class="pinta-cta-block">
+          <p>
+            digital painting
+          </p>
+        </article>
+        <article class="pinta-cta-block">
+          <p>
+            photo editing
+          </p>
+        </article>
+        <article class="pinta-cta-block">
+          <p>
+            pixel art
+          </p>
+        </article>
+        <article class="pinta-cta-closer">
+          <p>
+            Paint, enhance, and create without limits — the power of effortless
+            image editing right at your fingertips. Whether you're refining a
+            photo, crafting a masterpiece, or just having creative fun, Pinta
+            makes the process smooth and enjoyable.
+          </p>
+          <a href="releases">
+            try pinta now
+          </a>
+        </article>
+      </section>
+    </main>
 
-        <div class="panel-body">
-            <div class="feature-list">
-                <div class="feature">
-                    <img src="/theme/images/tools64.png" alt="Drawing Tools" width="48" height="48" />
+    <!--This section footer-->
+    <div class="" id="pinta-footer-tag" data-base="" data-active=""></div>
 
-                    <div class="title">Drawing Tools</div>
-                    Use easy drawing tools to draw freehand, lines, rectangles, ellipses, and more.
-                </div>
+    <!--This section contains the navbar and menu-->
+    <div class="" id="pinta-menu-tag" data-base="" data-active=""></div>
+  </body>
 
-                <div class="feature">
-                    <img src="/theme/images/adjustments.png" alt="Adjustments and Effects" width="48" height="48" />
+  <script src="js/pinta.js" charset="utf-8" defer></script>
+  <script src="js/pinta-os-detect.js" charset="utf-8"></script>
 
-                    <div class="title">Adjustments and Effects</div>
-                    Pinta includes over 35 adjustments and effects for tweaking your images.
-                </div>
-
-                <div class="feature">
-                    <img src="/theme/images/multilingual.png" alt="Multilingual" width="48" height="48" />
-
-                    <div class="title">Multilingual</div>
-                    Use Pinta in your language. Pinta is at least partially translated into over 55 languages.
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="box pull-left feature-box">
-        <div class="box-header">
-            <span class="title">Advanced Features</span>
-        </div>
-
-        <div class="panel-body">
-            <div class="feature-list">
-                <div class="feature">
-                    <img src="/theme/images/history.png" alt="Full History" width="48" height="48" />
-
-                    <div class="title">Full History</div>
-                    Don't be afraid to experiment, Pinta tracks your full history so you can always undo.
-                </div>
-
-                <div class="feature">
-                    <img src="/theme/images/layers.png" alt="Multiple Layers" width="48" height="48" />
-
-                    <div class="title">Multiple Layers</div>
-                    Use layers to help separate and group elements of your image for easy editing.
-                </div>
-
-                <div class="feature">
-                    <img src="/theme/images/workspace.png" alt="Your Workspace" width="48" height="48" />
-
-                    <div class="title">Your Workspace</div>
-                    Like docked windows? No problem. Floating windows? No problem. You can even mix and match.
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="box pull-left feature-box">
-        <div class="box-header">
-            <span class="title">Resources</span>
-        </div>
-
-        <div class="panel-body">
-            <div class="feature-list">
-                <ul class="resource-list">
-                    <li><a href="/releases">Download</a></li>
-                    <li><a href="/howto">Documentation</a></li>
-                    <li><a href="{{site.links.bugs}}">File Bugs</a></li>
-                    <li><a href="{{site.links.suggestions}}">Make Suggestions</a></li>
-                    <li><a href="{{site.links.questions}}">Ask Questions</a></li>
-                    <li><a href="{{site.links.discussions}}">Discuss Pinta</a></li>
-                    <li><a href="/howto/contribute">Contribute</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+  </script>
+</html>

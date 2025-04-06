@@ -3,8 +3,7 @@
 This repository contains the layout and content of the Pinta website (<https://pinta-project.com>).
 
 ## Local testing
-- Set up [Jekyll](https://jekyllrb.com/docs/installation/).
-- Run `jekyll serve`.
+- If using VS Code or Pulsar, launch using a liveserver extension.
 
 ## Contributing
 

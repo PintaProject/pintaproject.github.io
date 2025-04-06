@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800"
+   height="800"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="ubuntu-svgrepo-com.svg"
+   inkscape:version="1.4 (e7c3feb, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.9875"
+     inkscape:cx="400"
+     inkscape:cy="400"
+     inkscape:window-width="1920"
+     inkscape:window-height="1003"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <title
+     id="title1">Clarity Icon</title>
+  <desc
+     id="desc1">This is shape (source) for Clarity vector icon theme for gtk</desc>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Clarity Icon</dc:title>
+        <dc:description>This is shape (source) for Clarity vector icon theme for gtk</dc:description>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Jakub Jankiewicz</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Jakub Jankiewicz</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:date>2010</dc:date>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     d="m 568.24448,132 c -26.40727,0 -47.64897,21.32462 -47.64448,47.64445 -0.005,26.31983 21.23727,47.64444 47.64448,47.64444 26.40723,0 48.02115,-21.32461 48.01662,-47.64444 C 616.2661,153.32462 594.65175,132 568.24448,132 Z m -141.81667,47.64445 c -23.79905,1.75371 -46.62257,7.68746 -67.74445,16.37778 l 42.80556,72.95556 c 10.92545,-3.45397 22.28174,-5.35052 34.24446,-5.95556 2.34162,-0.11789 4.70116,0 7.0722,0 65.59747,0 120.33958,45.90242 133.99999,107.20001 h 85.23888 c -6.0488,-44.55971 -25.68565,-84.88402 -54.3444,-116.87779 -11.77013,6.30187 -25.16759,9.67778 -39.45557,9.67778 -44.86026,0 -81.68705,-35.07712 -83.74999,-79.28333 -13.50118,-2.57104 -27.44513,-4.09445 -41.68891,-4.09445 -2.86066,0 -5.72664,-0.1072 -8.56112,0 -0.92261,0.0348 -1.68583,-0.047 -2.60557,0 -0.86654,0.0443 -1.74118,-0.0533 -2.60551,0 -0.83725,0.0521 -1.77054,-0.062 -2.60557,0 z m -119.11114,46.15556 c -34.32407,26.63622 -60.5026,63.31054 -74.44446,105.3389 22.02235,15.02547 36.47777,40.27196 36.47777,68.86111 0,28.58911 -14.45542,53.83564 -36.47777,68.86111 13.93719,42.03858 40.10847,78.72905 74.44446,105.33889 l 42.43337,-73.32777 c -27.29363,-25.0373 -44.29449,-61.02335 -44.29449,-100.87223 0,-39.83449 17.03405,-75.77262 44.29449,-100.87223 z M 185.97222,352.35557 c -26.40725,0 -48.02121,21.32461 -48.01666,47.64445 -0.005,26.31981 21.60941,47.64443 48.01666,47.64445 26.40725,0 47.64901,-21.32465 47.64445,-47.64445 0.005,-26.31983 -21.2372,-47.64445 -47.64445,-47.64445 z m 390.83335,77.42223 c -13.66035,61.29756 -68.40252,107.20001 -133.99999,107.20001 -14.52247,0 -28.20811,-2.18555 -41.31666,-6.32778 l -42.80556,72.95557 c 25.93806,10.67262 54.32421,16.75 84.12222,16.75 14.24385,0 28.18779,-1.52342 41.68891,-4.09448 2.07972,-42.35091 36.22017,-76.60711 78.53888,-79.28331 1.77581,-0.11197 3.40708,10e-6 5.21111,0 14.28798,-10e-6 27.68544,3.37592 39.45557,9.67778 28.65875,-31.99374 48.2956,-72.3181 54.3444,-116.87779 z m -8.56109,142.93336 c -26.40727,0 -47.64897,21.32459 -47.64448,47.64444 -0.005,26.31976 21.23727,47.64445 47.64448,47.6444 26.40723,0 48.02115,-21.32464 48.01662,-47.6444 0.005,-26.31985 -21.60935,-47.64444 -48.01662,-47.64444 z"
+     id="path1"
+     style="fill:#ffffff;stroke-width:4.70829" />
+</svg>

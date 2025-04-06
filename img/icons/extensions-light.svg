@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="148.74518"
+   height="150"
+   viewBox="0 0 39.355495 39.687499"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb, 2024-10-09)"
+   xml:space="preserve"
+   sodipodi:docname="extensions-light.svg"
+   inkscape:export-filename="DocsMockup6.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#000000"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="5.3333332"
+     inkscape:cx="74.437502"
+     inkscape:cy="75.000002"
+     inkscape:window-width="1920"
+     inkscape:window-height="1003"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"><inkscape:page
+       x="0"
+       y="0"
+       width="39.355495"
+       height="39.6875"
+       id="page2"
+       margin="0"
+       bleed="0" /></sodipodi:namedview><defs
+     id="defs1"><linearGradient
+   id="linearGradient15"
+   inkscape:collect="always"><stop
+     style="stop-color:#d6740e;stop-opacity:1;"
+     offset="0"
+     id="stop15" /><stop
+     style="stop-color:#7a7a7a;stop-opacity:1;"
+     offset="1"
+     id="stop16" /></linearGradient><linearGradient
+   id="linearGradient13"
+   inkscape:collect="always"><stop
+     style="stop-color:#d6740e;stop-opacity:1;"
+     offset="0"
+     id="stop14" /><stop
+     style="stop-color:#7a7a7a;stop-opacity:1;"
+     offset="0.43375841"
+     id="stop13" /></linearGradient><style
+   type="text/css"
+   id="style1">
+    .fil167 {fill:url(#kh);fill-rule:nonzero}
+    .fil76 {fill:url(#ki);fill-rule:nonzero}
+    .fil11 {fill:url(#ot);fill-rule:nonzero}
+    .fil189 {fill:url(#sh);fill-rule:nonzero}
+    .fil188 {fill:url(#ss);fill-rule:nonzero}
+    .fil18 {fill:url(#td);fill-rule:nonzero}
+    .fil14 {fill:url(#tp);fill-rule:nonzero}
+    .fil91 {fill:url(#ua);fill-rule:nonzero}
+    .fil257 {fill:url(#jv);fill-rule:nonzero}
+    .fil245 {fill:url(#kg);fill-rule:nonzero}
+    .fil139 {fill:url(#kj);fill-rule:nonzero}
+    .fil262 {fill:url(#ku);fill-rule:nonzero}
+    .fil263 {fill:url(#lg);fill-rule:nonzero}
+    .fil79 {fill:url(#lr);fill-rule:nonzero}
+    .fil168 {fill:url(#md);fill-rule:nonzero}
+    .fil249 {fill:url(#mo);fill-rule:nonzero}
+    .fil36 {fill:url(#mz);fill-rule:nonzero}
+    .fil63 {fill:url(#nl);fill-rule:nonzero}
+    .fil89 {fill:url(#nw);fill-rule:nonzero}
+    .fil242 {fill:url(#oi);fill-rule:nonzero}
+    .fil141 {fill:url(#ou);fill-rule:nonzero}
+    .fil62 {fill:url(#pg);fill-rule:nonzero}
+    .fil88 {fill:url(#pr);fill-rule:nonzero}
+    .fil240 {fill:url(#qc);fill-rule:nonzero}
+    .fil247 {fill:url(#qo);fill-rule:nonzero}
+    .fil140 {fill:url(#qz);fill-rule:nonzero}
+    .fil147 {fill:url(#rl);fill-rule:nonzero}
+    .fil205 {fill:url(#rw);fill-rule:nonzero}
+    .fil67 {fill:url(#se);fill-rule:nonzero}
+    .fil124 {fill:url(#sg);fill-rule:nonzero}
+    .fil264 {fill:url(#si);fill-rule:nonzero}
+    .fil178 {fill:url(#sj);fill-rule:nonzero}
+    .fil5 {fill:url(#sk);fill-rule:nonzero}
+    .fil142 {fill:url(#sl);fill-rule:nonzero}
+    .fil183 {fill:url(#sm);fill-rule:nonzero}
+    .fil181 {fill:url(#sn);fill-rule:nonzero}
+    .fil1 {fill:url(#so);fill-rule:nonzero}
+    .fil112 {fill:url(#sp);fill-rule:nonzero}
+    .fil111 {fill:url(#sq);fill-rule:nonzero}
+    .fil43 {fill:url(#sr);fill-rule:nonzero}
+    .fil155 {fill:url(#st);fill-rule:nonzero}
+    .fil216 {fill:url(#su);fill-rule:nonzero}
+    .fil180 {fill:url(#sv);fill-rule:nonzero}
+    .fil187 {fill:url(#sw);fill-rule:nonzero}
+    .fil9 {fill:url(#sx);fill-rule:nonzero}
+    .fil118 {fill:url(#sy);fill-rule:nonzero}
+    .fil119 {fill:url(#sz);fill-rule:nonzero}
+    .fil52 {fill:url(#ta);fill-rule:nonzero}
+    .fil221 {fill:url(#tb);fill-rule:nonzero}
+    .fil177 {fill:url(#tc);fill-rule:nonzero}
+    .fil276 {fill:url(#te);fill-rule:nonzero}
+    .fil94 {fill:url(#tf);fill-rule:nonzero}
+    .fil16 {fill:url(#th);fill-rule:nonzero}
+    .fil95 {fill:url(#ti);fill-rule:nonzero}
+    .fil203 {fill:url(#tj);fill-rule:nonzero}
+    .fil248 {fill:url(#tk);fill-rule:nonzero}
+    .fil185 {fill:url(#tl);fill-rule:nonzero}
+    .fil54 {fill:url(#tm);fill-rule:nonzero}
+    .fil265 {fill:url(#tn);fill-rule:nonzero}
+    .fil93 {fill:url(#to);fill-rule:nonzero}
+    .fil250 {fill:url(#tq);fill-rule:nonzero}
+    .fil41 {fill:url(#tr);fill-rule:nonzero}
+    .fil44 {fill:url(#ts);fill-rule:nonzero}
+    .fil83 {fill:url(#tt);fill-rule:nonzero}
+    .fil82 {fill:url(#tu);fill-rule:nonzero}
+    .fil223 {fill:url(#tv);fill-rule:nonzero}
+    .fil191 {fill:url(#tw);fill-rule:nonzero}
+    .fil27 {fill:url(#tx);fill-rule:nonzero}
+    .fil134 {fill:url(#ty);fill-rule:nonzero}
+    .fil34 {fill:url(#tz);fill-rule:nonzero}
+    .fil7 {fill:url(#ub);fill-rule:nonzero}
+    .fil193 {fill:url(#uc);fill-rule:nonzero}
+    .fil184 {fill:url(#ud);fill-rule:nonzero}
+    .fil137 {fill:url(#ue);fill-rule:nonzero}
+    .fil56 {fill:url(#uf);fill-rule:nonzero}
+    .fil116 {fill:url(#ug);fill-rule:nonzero}
+    .fil29 {fill:url(#jr);fill-rule:nonzero}
+    .fil201 {fill:url(#js);fill-rule:nonzero}
+    .fil239 {fill:url(#jt);fill-rule:nonzero}
+    .fil74 {fill:url(#ju);fill-rule:nonzero}
+    .fil130 {fill:url(#jw);fill-rule:nonzero}
+    .fil179 {fill:url(#jx);fill-rule:nonzero}
+    .fil170 {fill:url(#jy);fill-rule:nonzero}
+    .fil98 {fill:url(#jz);fill-rule:nonzero}
+    .fil251 {fill:url(#ka);fill-rule:nonzero}
+    .fil207 {fill:url(#kb);fill-rule:nonzero}
+    .fil243 {fill:url(#kc);fill-rule:nonzero}
+    .fil159 {fill:url(#kd);fill-rule:nonzero}
+    .fil153 {fill:url(#ke);fill-rule:nonzero}
+    .fil0 {fill:url(#kf);fill-rule:nonzero}
+    .fil136 {fill:url(#ky);fill-rule:nonzero}
+    .fil274 {fill:url(#lz);fill-rule:nonzero}
+    .fil266 {fill:url(#na);fill-rule:nonzero}
+    .fil253 {fill:url(#ob);fill-rule:nonzero}
+    .fil200 {fill:url(#pc);fill-rule:nonzero}
+    .fil106 {fill:url(#qd);fill-rule:nonzero}
+    .fil198 {fill:url(#re);fill-rule:nonzero}
+    .fil42 {fill:url(#sf);fill-rule:nonzero}
+    .fil4 {fill:url(#tg);fill-rule:nonzero}
+    .fil152 {fill:url(#uh);fill-rule:nonzero}
+    .fil219 {fill:url(#kk);fill-rule:nonzero}
+    .fil47 {fill:url(#kl);fill-rule:nonzero}
+    .fil64 {fill:url(#km);fill-rule:nonzero}
+    .fil48 {fill:url(#kn);fill-rule:nonzero}
+    .fil30 {fill:url(#ko);fill-rule:nonzero}
+    .fil49 {fill:url(#kp);fill-rule:nonzero}
+    .fil32 {fill:url(#kq);fill-rule:nonzero}
+    .fil55 {fill:url(#kr);fill-rule:nonzero}
+    .fil3 {fill:url(#ks);fill-rule:nonzero}
+    .fil26 {fill:url(#kt);fill-rule:nonzero}
+    .fil258 {fill:url(#kv);fill-rule:nonzero}
+    .fil127 {fill:url(#kw);fill-rule:nonzero}
+    .fil164 {fill:url(#kx);fill-rule:nonzero}
+    .fil163 {fill:url(#kz);fill-rule:nonzero}
+    .fil40 {fill:url(#la);fill-rule:nonzero}
+    .fil57 {fill:url(#lb);fill-rule:nonzero}
+    .fil202 {fill:url(#lc);fill-rule:nonzero}
+    .fil28 {fill:url(#ld);fill-rule:nonzero}
+    .fil261 {fill:url(#le);fill-rule:nonzero}
+    .fil120 {fill:url(#lf);fill-rule:nonzero}
+    .fil143 {fill:url(#lh);fill-rule:nonzero}
+    .fil161 {fill:url(#li);fill-rule:nonzero}
+    .fil226 {fill:url(#lj);fill-rule:nonzero}
+    .fil125 {fill:url(#lk);fill-rule:nonzero}
+    .fil270 {fill:url(#ll);fill-rule:nonzero}
+    .fil173 {fill:url(#lm);fill-rule:nonzero}
+    .fil53 {fill:url(#ln);fill-rule:nonzero}
+    .fil195 {fill:url(#lo);fill-rule:nonzero}
+    .fil80 {fill:url(#lp);fill-rule:nonzero}
+    .fil236 {fill:url(#lq);fill-rule:nonzero}
+    .fil268 {fill:url(#ls);fill-rule:nonzero}
+    .fil66 {fill:url(#lt);fill-rule:nonzero}
+    .fil65 {fill:url(#lu);fill-rule:nonzero}
+    .fil215 {fill:url(#lv);fill-rule:nonzero}
+    .fil256 {fill:url(#lw);fill-rule:nonzero}
+    .fil227 {fill:url(#lx);fill-rule:nonzero}
+    .fil174 {fill:url(#ly);fill-rule:nonzero}
+    .fil146 {fill:url(#ma);fill-rule:nonzero}
+    .fil121 {fill:url(#mb);fill-rule:nonzero}
+    .fil230 {fill:url(#mc);fill-rule:nonzero}
+    .fil78 {fill:url(#me);fill-rule:nonzero}
+    .fil235 {fill:url(#mf);fill-rule:nonzero}
+    .fil105 {fill:url(#mg);fill-rule:nonzero}
+    .fil21 {fill:url(#mh);fill-rule:nonzero}
+    .fil131 {fill:url(#mi);fill-rule:nonzero}
+    .fil206 {fill:url(#mj);fill-rule:nonzero}
+    .fil214 {fill:url(#mk);fill-rule:nonzero}
+    .fil20 {fill:url(#ml);fill-rule:nonzero}
+    .fil110 {fill:url(#mm);fill-rule:nonzero}
+    .fil271 {fill:url(#mn);fill-rule:nonzero}
+    .fil126 {fill:url(#mp);fill-rule:nonzero}
+    .fil35 {fill:url(#mq);fill-rule:nonzero}
+    .fil96 {fill:url(#mr);fill-rule:nonzero}
+    .fil69 {fill:url(#ms);fill-rule:nonzero}
+    .fil87 {fill:url(#mt);fill-rule:nonzero}
+    .fil145 {fill:url(#mu);fill-rule:nonzero}
+    .fil175 {fill:url(#mv);fill-rule:nonzero}
+    .fil210 {fill:url(#mw);fill-rule:nonzero}
+    .fil212 {fill:url(#mx);fill-rule:nonzero}
+    .fil197 {fill:url(#my);fill-rule:nonzero}
+    .fil208 {fill:url(#nb);fill-rule:nonzero}
+    .fil225 {fill:url(#nc);fill-rule:nonzero}
+    .fil190 {fill:url(#nd);fill-rule:nonzero}
+    .fil71 {fill:url(#ne);fill-rule:nonzero}
+    .fil58 {fill:url(#nf);fill-rule:nonzero}
+    .fil60 {fill:url(#ng);fill-rule:nonzero}
+    .fil90 {fill:url(#nh);fill-rule:nonzero}
+    .fil267 {fill:url(#ni);fill-rule:nonzero}
+    .fil217 {fill:url(#nj);fill-rule:nonzero}
+    .fil244 {fill:url(#nk);fill-rule:nonzero}
+    .fil222 {fill:url(#nm);fill-rule:nonzero}
+    .fil218 {fill:url(#nn);fill-rule:nonzero}
+    .fil17 {fill:url(#no);fill-rule:nonzero}
+    .fil149 {fill:url(#np);fill-rule:nonzero}
+    .fil45 {fill:url(#nq);fill-rule:nonzero}
+    .fil81 {fill:url(#nr);fill-rule:nonzero}
+    .fil171 {fill:url(#ns);fill-rule:nonzero}
+    .fil8 {fill:url(#nt);fill-rule:nonzero}
+    .fil103 {fill:url(#nu);fill-rule:nonzero}
+    .fil135 {fill:url(#nv);fill-rule:nonzero}
+    .fil209 {fill:url(#nx);fill-rule:nonzero}
+    .fil13 {fill:url(#ny);fill-rule:nonzero}
+    .fil182 {fill:url(#nz);fill-rule:nonzero}
+    .fil12 {fill:url(#oa);fill-rule:nonzero}
+    .fil213 {fill:url(#oc);fill-rule:nonzero}
+    .fil122 {fill:url(#od);fill-rule:nonzero}
+    .fil192 {fill:url(#oe);fill-rule:nonzero}
+    .fil97 {fill:url(#of);fill-rule:nonzero}
+    .fil25 {fill:url(#og);fill-rule:nonzero}
+    .fil24 {fill:url(#oh);fill-rule:nonzero}
+    .fil92 {fill:url(#oj);fill-rule:nonzero}
+    .fil51 {fill:url(#ok);fill-rule:nonzero}
+    .fil33 {fill:url(#ol);fill-rule:nonzero}
+    .fil166 {fill:url(#om);fill-rule:nonzero}
+    .fil238 {fill:url(#on);fill-rule:nonzero}
+    .fil154 {fill:url(#oo);fill-rule:nonzero}
+    .fil22 {fill:url(#op);fill-rule:nonzero}
+    .fil108 {fill:url(#oq);fill-rule:nonzero}
+    .fil109 {fill:url(#or);fill-rule:nonzero}
+    .fil6 {fill:url(#os);fill-rule:nonzero}
+    .fil241 {fill:url(#ov);fill-rule:nonzero}
+    .fil101 {fill:url(#ow);fill-rule:nonzero}
+    .fil100 {fill:url(#ox);fill-rule:nonzero}
+    .fil138 {fill:url(#oy);fill-rule:nonzero}
+    .fil169 {fill:url(#oz);fill-rule:nonzero}
+    .fil23 {fill:url(#pa);fill-rule:nonzero}
+    .fil123 {fill:url(#pb);fill-rule:nonzero}
+    .fil254 {fill:url(#pd);fill-rule:nonzero}
+    .fil85 {fill:url(#pe);fill-rule:nonzero}
+    .fil157 {fill:url(#pf);fill-rule:nonzero}
+    .fil186 {fill:url(#ph);fill-rule:nonzero}
+    .fil46 {fill:url(#pi);fill-rule:nonzero}
+    .fil273 {fill:url(#pj);fill-rule:nonzero}
+    .fil150 {fill:url(#pk);fill-rule:nonzero}
+    .fil220 {fill:url(#pl);fill-rule:nonzero}
+    .fil160 {fill:url(#pm);fill-rule:nonzero}
+    .fil117 {fill:url(#pn);fill-rule:nonzero}
+    .fil37 {fill:url(#po);fill-rule:nonzero}
+    .fil39 {fill:url(#pp);fill-rule:nonzero}
+    .fil199 {fill:url(#pq);fill-rule:nonzero}
+    .fil165 {fill:url(#ps);fill-rule:nonzero}
+    .fil156 {fill:url(#pt);fill-rule:nonzero}
+    .fil158 {fill:url(#pu);fill-rule:nonzero}
+    .fil61 {fill:url(#pv);fill-rule:nonzero}
+    .fil38 {fill:url(#pw);fill-rule:nonzero}
+    .fil31 {fill:url(#px);fill-rule:nonzero}
+    .fil204 {fill:url(#py);fill-rule:nonzero}
+    .fil246 {fill:url(#pz);fill-rule:nonzero}
+    .fil133 {fill:url(#qa);fill-rule:nonzero}
+    .fil68 {fill:url(#qb);fill-rule:nonzero}
+    .fil10 {fill:url(#qe);fill-rule:nonzero}
+    .fil113 {fill:url(#qf);fill-rule:nonzero}
+    .fil50 {fill:url(#qg);fill-rule:nonzero}
+    .fil115 {fill:url(#qh);fill-rule:nonzero}
+    .fil114 {fill:url(#qi);fill-rule:nonzero}
+    .fil86 {fill:url(#qj);fill-rule:nonzero}
+    .fil2 {fill:url(#qk);fill-rule:nonzero}
+    .fil77 {fill:url(#ql);fill-rule:nonzero}
+    .fil162 {fill:url(#qm);fill-rule:nonzero}
+    .fil73 {fill:url(#qn);fill-rule:nonzero}
+    .fil72 {fill:url(#qp);fill-rule:nonzero}
+    .fil231 {fill:url(#qq);fill-rule:nonzero}
+    .fil151 {fill:url(#qr);fill-rule:nonzero}
+    .fil107 {fill:url(#qs);fill-rule:nonzero}
+    .fil232 {fill:url(#qt);fill-rule:nonzero}
+    .fil229 {fill:url(#qu);fill-rule:nonzero}
+    .fil234 {fill:url(#qv);fill-rule:nonzero}
+    .fil128 {fill:url(#qw);fill-rule:nonzero}
+    .fil148 {fill:url(#qx);fill-rule:nonzero}
+    .fil19 {fill:url(#qy);fill-rule:nonzero}
+    .fil144 {fill:url(#ra);fill-rule:nonzero}
+    .fil104 {fill:url(#rb);fill-rule:nonzero}
+    .fil59 {fill:url(#rc);fill-rule:nonzero}
+    .fil269 {fill:url(#rd);fill-rule:nonzero}
+    .fil194 {fill:url(#rf);fill-rule:nonzero}
+    .fil70 {fill:url(#rg);fill-rule:nonzero}
+    .fil211 {fill:url(#rh);fill-rule:nonzero}
+    .fil275 {fill:url(#ri);fill-rule:nonzero}
+    .fil102 {fill:url(#rj);fill-rule:nonzero}
+    .fil172 {fill:url(#rk);fill-rule:nonzero}
+    .fil233 {fill:url(#rm);fill-rule:nonzero}
+    .fil99 {fill:url(#rn);fill-rule:nonzero}
+    .fil84 {fill:url(#ro);fill-rule:nonzero}
+    .fil15 {fill:url(#rp);fill-rule:nonzero}
+    .fil252 {fill:url(#rq);fill-rule:nonzero}
+    .fil129 {fill:url(#rr);fill-rule:nonzero}
+    .fil132 {fill:url(#rs);fill-rule:nonzero}
+    .fil255 {fill:url(#rt);fill-rule:nonzero}
+    .fil237 {fill:url(#ru);fill-rule:nonzero}
+    .fil260 {fill:url(#rv);fill-rule:nonzero}
+    .fil75 {fill:url(#rx);fill-rule:nonzero}
+    .fil224 {fill:url(#ry);fill-rule:nonzero}
+    .fil228 {fill:url(#rz);fill-rule:nonzero}
+    .fil176 {fill:url(#sa);fill-rule:nonzero}
+    .fil272 {fill:url(#sb);fill-rule:nonzero}
+    .fil196 {fill:url(#sc);fill-rule:nonzero}
+    .fil259 {fill:url(#sd);fill-rule:nonzero}
+  </style>
+	
+	
+	
+	
+
+		
+	
+		
+	
+		
+	
+		
+	<linearGradient
+   inkscape:collect="always"
+   xlink:href="#linearGradient13"
+   id="linearGradient14"
+   x1="239.11638"
+   y1="714.17352"
+   x2="266.94489"
+   y2="686.34503"
+   gradientUnits="userSpaceOnUse" /><linearGradient
+   inkscape:collect="always"
+   xlink:href="#linearGradient15"
+   id="linearGradient16"
+   x1="263.38126"
+   y1="693.93787"
+   x2="267.69342"
+   y2="689.62573"
+   gradientUnits="userSpaceOnUse" /></defs><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-233.35289,-680.4156)"><g
+       id="g12"
+       style="fill:url(#linearGradient14);fill-opacity:1"><path
+         d="m 242.42207,720.10305 c -1.7246,0 -3.46541,-0.50706 -4.98659,-1.56258 l -0.32043,-0.22263 c -3.96887,-2.75612 -4.95598,-8.22816 -2.19986,-12.19703 l 8.35958,-11.15411 c 1.30995,-1.88782 3.31359,-3.17557 5.61726,-3.59082 2.30367,-0.41645 4.63074,0.0912 6.55337,1.42637 l 0.32044,0.22203 c 1.63219,1.13293 2.84133,2.80593 3.4054,4.71055 0.18782,0.63547 -0.17463,1.30335 -0.8107,1.49117 -0.63487,0.18663 -1.30275,-0.17402 -1.49117,-0.81069 -0.41465,-1.40237 -1.26975,-2.5851 -2.47169,-3.4192 l -0.32044,-0.22203 c -1.39697,-0.97031 -3.08796,-1.33876 -4.75916,-1.03632 -1.6724,0.30184 -3.12757,1.23674 -4.09728,2.63311 l -8.35898,11.15351 c -1.97603,2.84673 -1.25955,6.8198 1.62259,8.82163 l 0.32044,0.22263 c 2.88093,2.00063 6.8546,1.28535 8.85643,-1.59619 l 2.5539,-3.67603 c 0.37865,-0.54306 1.12514,-0.67748 1.6706,-0.30064 0.54366,0.37865 0.67868,1.12634 0.30064,1.6706 l -2.5539,3.67543 c -1.7,2.44829 -4.43392,3.76124 -7.21045,3.76124 z"
+         id="path1-9"
+         style="fill:url(#linearGradient14);stroke-width:0.60007;fill-opacity:1" /><path
+         d="m 255.60922,709.28558 c -1.72641,0 -3.47081,-0.50646 -4.99439,-1.56378 l -0.32284,-0.22503 c -1.63099,-1.13293 -2.83893,-2.80473 -3.4018,-4.70755 -0.18782,-0.63607 0.17522,-1.30335 0.8107,-1.49117 0.63787,-0.18783 1.30395,0.17462 1.49117,0.81069 0.41405,1.40117 1.26855,2.5833 2.47049,3.418 l 0.32284,0.22503 c 2.87974,1.99943 6.85341,1.28295 8.85524,-1.59859 l 8.35898,-11.15531 c 1.97663,-2.84673 1.26015,-6.8198 -1.62199,-8.82163 l -0.31804,-0.21903 c -1.39936,-0.97271 -3.08856,-1.33936 -4.76215,-1.03872 -1.6724,0.30184 -3.12757,1.23675 -4.09729,2.63311 l -2.55329,3.67543 c -0.37805,0.54486 -1.12574,0.67928 -1.67,0.30124 -0.54426,-0.37805 -0.67928,-1.12574 -0.30124,-1.67 l 2.5533,-3.67543 c 1.33516,-1.92323 3.3388,-3.21098 5.64307,-3.62623 2.30307,-0.41465 4.63134,0.0918 6.55396,1.42757 l 0.31744,0.21903 c 3.97247,2.75912 4.95898,8.23116 2.20226,12.19943 l -8.35898,11.15531 c -1.6832,2.42248 -4.40692,3.72763 -7.17744,3.72763 z"
+         id="path2-2"
+         style="fill:url(#linearGradient14);stroke-width:0.60007;fill-opacity:1" /></g><g
+       id="g14"
+       style="fill:url(#linearGradient16);fill-opacity:1"><path
+         d="m 263.08789,698.52212 c -0.12541,0 -0.25142,-0.039 -0.35944,-0.12001 -0.26523,-0.19863 -0.31923,-0.57487 -0.12001,-0.8395 l 0.32884,-0.43805 c 0.19862,-0.26523 0.57546,-0.31804 0.8395,-0.12002 0.26523,0.19863 0.31923,0.57487 0.12001,0.8395 l -0.32884,0.43805 c -0.11761,0.15782 -0.29763,0.24003 -0.48006,0.24003 z"
+         id="path3-4"
+         style="fill:url(#linearGradient16);fill-opacity:1;stroke-width:0.60007"
+         transform="translate(1.7242351e-7,1.2314477e-5)" /><path
+         d="m 264.46026,696.69191 c -0.12542,0 -0.25143,-0.039 -0.35945,-0.12002 -0.26523,-0.19862 -0.31923,-0.57487 -0.12001,-0.8395 l 2.65591,-3.54281 c 0.63668,-0.91691 0.8827,-2.04864 0.68048,-3.16837 -0.20222,-1.12034 -0.8281,-2.09485 -1.76301,-2.74353 l -0.20582,-0.14221 c -0.27243,-0.18902 -0.34024,-0.56287 -0.15182,-0.8353 0.18782,-0.27243 0.56167,-0.34084 0.8353,-0.15182 l 0.20642,0.14282 c 1.19835,0.8323 2.00064,2.08104 2.25987,3.51641 0.25923,1.43537 -0.0564,2.88634 -0.8881,4.08408 l -2.66852,3.56082 c -0.11881,0.15662 -0.29823,0.23943 -0.48125,0.23943 z"
+         id="path4-2"
+         style="fill:url(#linearGradient16);fill-opacity:1;stroke-width:0.60007"
+         transform="translate(1.7242351e-7,1.2314477e-5)" /></g></g><style
+     type="text/css"
+     id="style1-3">
+	.st0{fill:#000000;}
+</style></svg>

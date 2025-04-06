@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="pinta-dark">
+  <head>
+    <link rel="preload" href="../../css/pinta.css" as="style">
+    <style media="screen">
+      html {
+        opacity: 0;
+        transition: opacity 0.1s ease-in-out;
+      }
+
+      html[data-theme] {
+        opacity: 1;
+      }
+
+      .pinta-theme-toggle {
+        opacity: 0;
+      }
+
+      .pinta-menu-info .pinta-theme-toggle {
+        opacity: 1;
+      }
+    </style>
+
+    <script>
+      (function() {
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme === 'light') {
+            document.documentElement.classList.remove('pinta-dark');
+            document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+            document.documentElement.classList.add('pinta-dark');
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tutorials - Pinta</title>
+
+    <link rel="preload" as="image" href="../../img/photos/hero-sub.webp" type="image/webp">
+    <link rel="preload" href="../../css/fonts.css" as="style">
+    <link rel="preload" href="../../css/pinta-tutorials.css" as="style">
+    <link rel="preload" href="../../css/fonts/Baumans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <script src="../../js/pinta-theme.js" charset="utf-8" defer></script>
+
+    <meta property="og:title" content="Pinta: Painting Made Simple">
+    <meta property="og:description" content="Pinta is a free, open-source program for drawing and image editing. It combines powerful features with an easy-to-use interface, making creativity seamless. Available for Linux, Mac, Windows, and *BSD.">
+    <meta property="og:image" content="../../img/pinta-logo.png">
+    <meta property="og:url" content="https://pinta-project.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Pinta">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Pinta: Painting Made Simple">
+    <meta property="twitter:description" content="Create and edit images effortlessly with Pinta, the open-source painting and image editing tool for Linux, Mac, Windows, and *BSD.">
+    <meta property="twitter:image" content="../../img/pinta-logo.png">
+    <meta name="description" content="Pinta is a free, open-source painting and image editing program designed for simplicity and power. Available on Linux, Mac, Windows, and *BSD, it offers an intuitive interface, unlimited undo, real-time effects, and essential tools to enhance creativity effortlessly.">
+
+    <link rel="stylesheet" href="../../css/fonts.css">
+    <link rel="stylesheet" href="../../css/pinta.css">
+    <link rel="stylesheet" href="../../css/pinta-subs.css">
+    <link rel="stylesheet" href="../../css/pinta-tutorials.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="../../favicon.ico">
+  </head>
+  <body class="pinta-sub" id="pinta">
+
+    <button class="pinta-theme-toggle" type="button" name="theme-toggle" aria-label="Toggle The Theme" id="pinta-theme-switcher">
+      <img src="../../img/icons/theme/sun.svg" alt="">
+      <img src="../../img/icons/theme/moon.svg" alt="">
+    </button>
+
+    <!--This section contains the page content-->
+    <main class="pinta-main pinta-portfolio pinta-docs pinta-distros">
+      <h1 class="pinta-page-heading">tutorials</h1>
+      <div class="pinta-section-return">
+        <a href="../" aria-label="back to documentation">
+        </a>
+      </div>
+      <div class="pinta-tutorial-layout">
+        <div class="pinta-tutorial-player-container">
+          <div class="">
+            <p>
+              Discover a range of community-led tutorials that teach you how to
+              create and edit images. Learn essential tools, tips, and tricks
+              to effortlessly draw, paint, and enhance your visuals.
+            </p>
+          </div>
+          <div id="player" class="pinta-tutorial-player" data-source="UzXwoGxGzhI"></div>
+        </div>
+        <div class="pinta-tutorial-playlist">
+          <h2 id="player-title">
+            select a tutorial:
+          </h2>
+          <section class="pinta-tutorials-block">
+            <ul class="pinta-tutorial-list">
+              <li>
+                <div class="pinta-tutorial-description">
+                  Pinta 1.5 demo
+                </div>
+                <div class="pinta-tutorial-author">
+                  <span>Author</span>
+                  <span>Popescu Sorin</span>
+                  <button aria-label="watch tutorial" type="button" name="button" data-source="UzXwoGxGzhI">
+                    <img src="../../img/icons/play.svg" alt="">
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="pinta-tutorial-description">
+                  Creating a self portrait in Pinta
+                </div>
+                <div class="pinta-tutorial-author">
+                  <span>Author</span>
+                  <span>herman yosef</span>
+                  <button aria-label="watch tutorial" type="button" name="button" data-source="https://www.youtube.com/watch?v=LPJ4PVoApq0">
+                    <img src="../../img/icons/play.svg" alt="">
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="pinta-tutorial-description">
+                  Using Pinta 1.0
+                </div>
+                <div class="pinta-tutorial-author">
+                  <span>Author</span>
+                  <span>moheb ullah</span>
+                  <button aria-label="watch tutorial" type="button" name="button" data-source="m9WkOLg-vjA">
+                    <img src="../../img/icons/play.svg" alt="">
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!--This section footer-->
+    <div class="" id="pinta-footer-tag" data-base="../../" data-active="#pinta-tutorials-footer"></div>
+
+    <!--This section contains the navbar and menu-->
+    <div class="" id="pinta-menu-tag" data-base="../../" data-active="#pinta-tutorials"></div>
+
+    <script src="../../js/pinta.js" charset="utf-8" defer></script>
+    <script src="../../js/pinta-os-detect.js" defer charset="utf-8"></script>
+    <script src="../../js/pinta-tutorials.js" defer charset="utf-8"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+  </body>
+</html>

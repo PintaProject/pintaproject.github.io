@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" class="pinta-dark">
+  <head>
+    <style media="screen">
+      html {
+        opacity: 0;
+        transition: opacity 0.1s ease-in-out;
+      }
+
+      html[data-theme] {
+        opacity: 1;
+      }
+
+      .pinta-theme-toggle {
+        opacity: 0;
+      }
+
+      .pinta-menu-info .pinta-theme-toggle {
+        opacity: 1;
+      }
+    </style>
+
+    <script>
+      (function() {
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme === 'light') {
+            document.documentElement.classList.remove('pinta-dark');
+            document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+            document.documentElement.classList.add('pinta-dark');
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Installion Guide - Pinta: Painting made simple</title>
+
+    <script src="../../js/pinta-theme.js" defer charset="utf-8"></script>
+
+    <link rel="preload" as="image" href="../../img/photos/hero-sub.webp" type="image/webp">
+    <link rel="preload" href="../../css/fonts.css" as="style">
+    <link rel="preload" href="../../css/pinta-subs.css" as="style">
+    <link rel="preload" href="../../css/fonts/Baumans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <meta property="og:title" content="Pinta: Painting Made Simple">
+    <meta property="og:description" content="Pinta is a free, open-source program for drawing and image editing. It combines powerful features with an easy-to-use interface, making creativity seamless. Available for Linux, Mac, Windows, and *BSD.">
+    <meta property="og:image" content="../../img/pinta-logo.png">
+    <meta property="og:url" content="https://pinta-project.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Pinta">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Pinta: Painting Made Simple">
+    <meta property="twitter:description" content="Create and edit images effortlessly with Pinta, the open-source painting and image editing tool for Linux, Mac, Windows, and *BSD.">
+    <meta property="twitter:image" content="../../img/pinta-logo.png">
+    <meta name="description" content="Pinta is a free, open-source painting and image editing program designed for simplicity and power. Available on Linux, Mac, Windows, and *BSD, it offers an intuitive interface, unlimited undo, real-time effects, and essential tools to enhance creativity effortlessly.">
+
+    <link rel="stylesheet" href="../../css/fonts.css">
+    <link rel="stylesheet" href="../../css/pinta.css">
+    <link rel="stylesheet" href="../../css/pinta-subs.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="../../favicon.ico">
+
+  </head>
+  <body class="pinta-sub" id="pinta">
+
+    <button class="pinta-theme-toggle" type="button" name="theme-toggle" aria-label="Toggle The Theme" id="pinta-theme-switcher">
+      <img src="../../img/icons/theme/sun.svg" alt="">
+      <img src="../../img/icons/theme/moon.svg" alt="">
+    </button>
+
+    <!--This section contains the page content-->
+    <main class="pinta-main pinta-portfolio pinta-docs">
+      <h1 class="pinta-page-heading">Installation Guide</h1>
+      <div class="pinta-section-return">
+        <a href="../" aria-label="back to documentation">
+        </a>
+      </div>
+      <section class="">
+        <h2>Installation Methods</h2>
+        <p>
+          Since installation methods differ depending on your operating system,
+          we’ve outlined the best approaches for each. On Ubuntu, you can
+          install Pinta through your package manager, ensuring a quick and
+          simple setup. For *BSD users, we provide detailed instructions
+          tailored to your environment. If you prefer using the tarball, we've
+          included steps to build and run Pinta from source. Follow the section
+          that matches your system for a smooth installation process.
+        </p>
+      </section>
+      <section class="">
+        <h2>Installing Pinta on Ubuntu</h2>
+        <h3>Install Pinta from Default Ubuntu Repository</h3>
+        <p>Pinta is available in the default Ubuntu repository. You can install it using:</p>
+        <ul>
+          <li>Click on <strong>Ubuntu Software Center</strong> from the Launcher (left side icon panel).</li>
+          <li>At the top right input box, type in: <strong>Pinta</strong> and press <strong>Enter</strong>.</li>
+          <li>Pinta is displayed in the list below. Click on it and click the <strong>Install</strong> button.</li>
+        </ul>
+        <p>But Pinta from the default Ubuntu repository can be an old version, so you may want to install a more recent version of Pinta from the Pinta maintainers PPA repository. See below.</p>
+        <h3>Install Pinta from Pinta Maintainers PPA Repository Using Terminal (for Advanced Users)</h3>
+        <p>Open terminal with <strong>CTRL+ALT+T</strong></p>
+        <p>First, install the latest version of Mono (version 6.10 or higher is strongly recommended).</p>
+        <p>Add Pinta stable PPA repository:</p>
+        <pre><code>sudo add-apt-repository ppa:pinta-maintainers/pinta-stable</code></pre>
+        <p><strong>Note:</strong> Instead of <code>pinta-stable</code> you can add <code>pinta-daily</code> if you like to test the latest and greatest Pinta, but it may be buggy.</p>
+        <p>Update system package lists:</p>
+        <pre><code>sudo apt-get update</code></pre>
+        <p>Install Pinta:</p>
+        <pre><code>sudo apt-get install pinta</code></pre>
+        <h2>Installing Pinta on *BSD</h2>
+        <h3>FreeBSD and DragonFly BSD</h3>
+        <p>Pinta is available in FreeBSD and DragonFly BSD ports.</p>
+        <p>You can install the binary package using:</p>
+        <pre><code>sudo pkg install pinta</code></pre>
+        <p>or compile it using:</p>
+        <pre><code>cd /usr/ports/graphics/pinta && sudo make install clean</code></pre>
+        <h3>OpenBSD</h3>
+        <p>Pinta is available in OpenBSD ports.</p>
+        <p>You can install the binary package using:</p>
+        <pre><code>sudo pkg_add pinta</code></pre>
+        <p>or compile it using:</p>
+        <pre><code>cd /usr/ports/graphics/pinta && sudo make install</code></pre>
+        <h2>Using the Tarball</h2>
+        <p>A tarball is like a ZIP file. It is a single file with many files inside it. Like a ZIP file, it has to be extracted before you can use the files in them.</p>
+        <p>First, you must download the tarball. Head on over to the <strong>Download</strong> page and click on the <strong>Download</strong> link under Tarball. Download the file wherever you’d like, just be sure you remember where.</p>
+        <p>Second, we need to extract it. You can either use your mouse to right-click on the tarball file and select <strong>‘Extract here’</strong> or you can use the terminal if you are more comfortable with that.</p>
+        <p>Here is the command to extract the files via the terminal, be sure you are in the same folder as the tarball:</p>
+        <pre><code>tar -zxf pinta-VERSION.tar.gz</code></pre>
+      </section>
+    </main>
+
+    <!--This section footer-->
+    <div class="" id="pinta-footer-tag" data-base="../../" data-active="#pinta-install-footer"></div>
+
+    <!--This section contains the navbar and menu-->
+    <div class="" id="pinta-menu-tag" data-base="../../" data-active="#pinta-instructions"></div>
+
+    <script src="../../js/pinta.js" charset="utf-8"></script>
+    <script src="../../js/pinta-os-detect.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,311 @@
+.pinta-tutorial-layout {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+  padding: 0 2.736vw;
+  justify-content: center;
+}
+
+.pinta-tutorial-player-container {
+  display: flex;
+  flex-flow: column;
+  gap: 36px;
+  margin: 15px auto 5% 15%;
+  text-align: center;
+  width: 75vw;
+}
+
+.pinta-tutorials-block {
+  scrollbar-color: var(--pinta-blue1) var(--pinta-bg-color);
+  scrollbar-width: thin;
+  overflow: auto;
+  width: 100%;
+}
+
+.pinta-tutorials-block::-webkit-scrollbar {
+  width: 8px;
+}
+
+.pinta-tutorials-block::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+.pinta-tutorials-block::-webkit-scrollbar-thumb {
+  background: var(--pinta-bg-color);
+  border-radius: 18px;
+  transition: var(--pinta-slow-transition);
+}
+
+.pinta-tutorial-player-container p {
+  margin: 15px auto 0 auto;
+}
+
+.pinta-tutorial-player {
+  aspect-ratio: 1920/1080;
+  background: black;
+  border-radius: 18px;
+  box-shadow: 0 6px 17.936px rgba(0, 0, 0, .436);
+  cursor: pointer;
+  display: flex;
+  height: 33.75vw;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.pinta-tutorial-player::after {
+  aspect-ratio: 1/1;
+  align-items: center;
+  background: black;
+  color: var(--pinta-orange);
+  border-radius: 50%;
+  content: '\25B6';
+  font-size: 176%;
+  display: flex;
+  font-family: var(--pinta-header-font-family);
+  inset: 33% auto;
+  justify-content: center;
+  position: absolute;
+  transition: var(--pinta-slow-transition);
+}
+
+.pinta-tutorial-player:hover:after {
+  color: var(--pinta-blue1);
+  transform: scale(1.236);
+}
+
+@keyframes rotater {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: .976;
+    filter: blur(0);
+  }
+  50% {
+    filter: blur(9.396px);
+    opacity: .5;
+    transform: scale(1) rotate(180deg);
+  }
+  100% {
+    opacity: .976;
+    filter: blur(0);
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+.pinta-tutorial-player::before {
+  animation: rotater 10s both infinite ease-in-out;
+  aspect-ratio: 1/1;
+  background: var(--pinta-docs-h2-underline-bg);
+  border-radius: 50%;
+  content: '';
+  inset: 32.6% auto;
+  position: absolute;
+  transition: var(--pinta-slower-transition);
+}
+
+.pinta-tutorial-player:hover:before {
+  inset: 27.6% auto;
+}
+
+.pinta-tutorials-block {
+  max-height: 720px;
+  overflow-y: auto;
+}
+
+.pinta-tutorials-block .pinta-tutorial-list {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  flex-flow: column;
+  height: 65vh;
+  list-style: none;
+  padding: 15px 0;
+  margin: 0 auto;
+  width: 93.736%;
+}
+
+.pinta-tutorial-list li {
+  background: transparent;
+  border: 2px solid rgba(136, 136, 136, .136);
+  border-radius: 8px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5px;
+  margin: 5px;
+  padding: 15px 15px 20px 15px;
+  max-width: clamp(876px, 10vw, 12.36vw);
+  transition: border-color var(--pinta-slower-transition);
+  width: 100%;
+}
+
+@media (pointer: fine) {
+  .pinta-tutorial-list li:hover {
+    border-color: var(--pinta-blue1);
+  }
+}
+
+.pinta-tutorial-playlist h2 {
+  margin: 17.5vh auto 0 auto;
+}
+
+.pinta-tutorial-description {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  font-weight: 400;
+  font-size: 90%;
+  padding: 0 15px;
+}
+
+.pinta-tutorial-author {
+  padding: 0 15px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  gap: 5px;
+  padding: 0 6px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.pinta-tutorial-author span {
+  background: var(--pinta-tutorial-author-bg);
+  align-items: center;
+  border-radius: 4px;
+  color: var(--pinta-color);
+  display: flex;
+  flex: 1;
+  font-family: 'Jost', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: center;
+  letter-spacing: .136em;
+  margin: 5px;
+  padding: 0 3.736%;
+  text-align: center;
+}
+
+.pinta-tutorial-author span:first-of-type {
+  flex: .5;
+}
+
+.pinta-tutorial-author span:last-of-type {
+  flex: 1;
+}
+
+.pinta-tutorial-list li button {
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  font-family: var(--pinta-header-font-family);
+  height: calc(var(--pinta-nav-height) * .85);
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.pinta-tutorial-list li button img {
+  margin: 0 3.736%;
+  width: 36px;
+}
+
+.pinta-tutorial-list li button:before,
+.pinta-tutorial-list li button:after {
+  border-radius: var(--pinta-tutorial-border-radius);
+  content: '';
+  inset: 0;
+  position: absolute;
+  transition: var(--pinta-slow-transition);
+}
+
+.pinta-tutorial-list li button:before {
+  background: var(--pinta-tutorial-list-bg);
+  z-index: -2;
+}
+
+.pinta-tutorial-list li button:after {
+  background: var(--pinta-action-button0-hover-bg);
+  opacity: 0;
+  z-index: -1;
+}
+
+.pinta-tutorial-list li button:hover:after {
+  opacity: 1;
+}
+
+.pinta-tutorials-block .pinta-load-more-button {
+  margin: 15px auto 35px auto;
+  width: 80%;
+}
+
+@media only screen and (max-width: 1440px) {
+  .pinta-tutorial-layout {
+    flex-flow: column;
+  }
+
+  .pinta-tutorial-playlist h2 {
+    margin: 2.376vh 0 0 0;
+  }
+
+  .pinta-tutorial-player-container {
+    margin: 15px auto;
+    padding: 15px;
+    width: unset;
+  }
+
+  .pinta-tutorial-player {
+    height: 45vw;
+    margin: 0 auto;
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .pinta-tutorials-block {
+    max-height: 280px;
+  }
+
+  .pinta-tutorial-player-container {
+    margin: 15px auto;
+    padding: 15px;
+  }
+
+  .pinta-tutorial-player {
+    aspect-ratio: 1920/1080;
+    border-radius: 18px;
+    box-shadow: 0 6px 17.936px rgba(0, 0, 0, .436);
+    height: 53.625vw;
+    display: flex;
+    justify-content: center;
+    width: 95vw;
+  }
+
+  .pinta-tutorial-author {
+    flex-flow: column;
+    padding: 0;
+  }
+
+  .pinta-tutorial-author span,
+  .pinta-tutorial-list li button {
+    margin: 5px auto;
+    width: 100%;
+  }
+
+  .pinta-tutorial-list li button {
+    max-width: unset;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .pinta-tutorial-layout {
+    padding: 0;
+  }
+}

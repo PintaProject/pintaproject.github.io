@@ -437,7 +437,7 @@ body {
     transform: translateY(-2px) translateX(5px);
 }
 .windows {
-    --pinta-download-icon: url(../img/icons/downloads/windows.svg);
+    --pinta-download-icon: url(../img/icons/downloads/windows-white.svg);
 }
 .flatpak {
     --pinta-download-icon: url(../img/icons/downloads/flatpak.svg);

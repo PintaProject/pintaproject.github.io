@@ -1210,7 +1210,7 @@ body {
 .pinta-page-heading {
   display: flex;
   font-family: "Baumans", "Inter", sans-serif;
-  font-size: 180%;
+  font-size: var(--pinta-article-h2-font-size);
   font-weight: 400;
   letter-spacing: 0.136vw;
   margin: 0 auto;
@@ -1269,7 +1269,7 @@ body {
 .pinta-text p {
     color: var(--pinta-color);
     line-height: 2;
-    font-size: 135%;
+    font-size: var(--pinta-font-size);
 }
 .pinta-text em {
     font-size: 102.5%;
@@ -1758,6 +1758,7 @@ a.pinta-button,
 @media only screen and (max-width: 1200px) {
     :root {
         font-size: 10px;
+        --pinta-font-size: 2.35rem;
     }
     .pinta-footer-box-container {
         margin: 2rem 1rem 0 1rem;
@@ -1797,7 +1798,6 @@ a.pinta-button,
         width: 50%;
     }
     .pinta-description-box .pinta-article p {
-        font-size: 2.35rem;
         margin: 2rem 0;
     }
     .pinta-description-box .pinta-article h2 {
@@ -1878,9 +1878,6 @@ a.pinta-button,
         padding: 2rem 0 0 0;
         width: 80%;
     }
-    .pinta-text p {
-        font-size: 123.376%;
-    }
     .pinta-photo {
         margin: 5rem auto;
         width: 80%;
@@ -1948,7 +1945,7 @@ a.pinta-button,
         width: 100%;
     }
     .pinta-text p {
-        margin: 1rem 0;
+        margin: 3rem 0;
     }
     .pinta-heading2 {
         font-size: var(--pinta-article-h2-font-size);

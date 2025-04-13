@@ -247,12 +247,16 @@
 }
 
 @media only screen and (max-width: 1440px) {
+  .pinta-tutorial-player::after {
+    font-size: 76%;
+  }
+
   .pinta-tutorial-layout {
     flex-flow: column;
   }
 
   .pinta-tutorial-playlist h2 {
-    margin: 2.376vh 0 0 0;
+    margin: 2.376vh auto 0 auto;
   }
 
   .pinta-tutorial-player-container {

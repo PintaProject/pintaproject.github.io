@@ -3,6 +3,7 @@ release:
   release_notes: /releases/3-0
   download_tarball: https://github.com/PintaProject/Pinta/releases/download/3.0/pinta-3.0.tar.gz
   download_osx: https://github.com/PintaProject/Pinta/releases/download/3.0/Pinta-macos-x86_64.dmg
+  download_macos_arm64: https://github.com/PintaProject/Pinta/releases/download/3.0/Pinta-macos-arm64.dmg
   download_win: https://github.com/PintaProject/Pinta/releases/download/3.0/Pinta.exe
   download_zip: https://github.com/PintaProject/Pinta/releases/download/3.0/pinta-3.0.zip
 

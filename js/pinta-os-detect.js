@@ -1,4 +1,34 @@
 document.addEventListener("DOMContentLoaded", function () {
+  function isAppleSilicon() {
+    // Method 1: Check for ARM in userAgent (some browsers expose this)
+    if (/\bARM\b|Apple Silicon/i.test(navigator.userAgent)) return true;
+
+    // Method 2: Check performance characteristics (Apple Silicon is much faster)
+    const start = performance.now();
+    let sum = 0;
+    for (let i = 0; i < 1e7; i++) sum += Math.random();
+    const duration = performance.now() - start;
+    if (duration < 15) return true; // Empirical threshold for Apple Silicon speed
+
+    // Method 3: Check WebGL renderer (Apple Silicon GPUs identify themselves)
+    try {
+      const canvas = document.createElement('canvas');
+      const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+      if (gl) {
+        const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+        if (debugInfo) {
+          const renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
+          if (/Apple M[1-9]/.test(renderer)) return true;
+        }
+      }
+    } catch (e) {}
+
+    // Method 4: High core count + memory (typical of Apple Silicon)
+    if (navigator.hardwareConcurrency >= 8 && (navigator.deviceMemory || 0) >= 8) return true;
+
+    return false;
+  }
+
   function getOSInfo() {
     const userAgent = navigator.userAgent;
     const platform = navigator.platform || "";
@@ -7,8 +37,13 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("🔍 Platform:", platform);
 
     if (/Windows NT/i.test(userAgent)) return { os: "windows", linkKey: "download_win" };
-    if (/Mac OS X|Macintosh|Mac_PowerPC/i.test(userAgent) || /MacIntel/i.test(platform))
+    if (/Mac OS X|Macintosh|Mac_PowerPC/i.test(userAgent) || /MacIntel/i.test(platform)) {
+      // Check for Apple Silicon Macs
+      if (isAppleSilicon()) {
+        return { os: "macos", linkKey: "download_macosarm64" };
+      }
       return { os: "macos", linkKey: "download_osx" };
+    }
     if (/OpenBSD/i.test(userAgent)) return { os: "openbsd", linkKey: "download_openbsd" };
     if (/Ubuntu|Debian/i.test(userAgent)) return { os: "ubuntu", link: "https://snapcraft.io/pinta" };
     if (/Android/i.test(userAgent)) return { os: "generic" };

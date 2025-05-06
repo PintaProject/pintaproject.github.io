@@ -32,7 +32,7 @@ fetch('https://raw.githubusercontent.com/PintaProject/pintaproject.github.io/mas
 
     if (config.release && typeof config.release === 'object') {
       // Extract and update download links
-      const keys = ['download_tarball', 'download_osx', 'download_win', 'download_zip'];
+      const keys = ['download_tarball', 'download_osx', 'download_macosarm64', 'download_win', 'download_zip'];
       keys.forEach(key => {
         const elementId = `pinta-${key.replace('_', '-')}`;
         const element = document.getElementById(elementId);

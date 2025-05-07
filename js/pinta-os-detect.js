@@ -1,7 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
   function isAppleSilicon() {
-    // Method 1: Check for ARM in userAgent (some browsers expose this)
-    if (/\bARM\b|Apple Silicon/i.test(navigator.userAgent)) return true;
+    // Method 1: Check WebGL renderer (Apple Silicon GPUs identify themselves)
+    try {
+      const canvas = document.createElement('canvas');
+      const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+      if (gl) {
+        const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+        if (debugInfo) {
+          const renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
+          if (/Apple M[1-9]/.test(renderer) || /Apple GPU/.test(renderer)) return true;
+        }
+      }
+    } catch (e) {}
 
     // Method 2: Check performance characteristics (Apple Silicon is much faster)
     const start = performance.now();
@@ -10,18 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const duration = performance.now() - start;
     if (duration < 15) return true; // Empirical threshold for Apple Silicon speed
 
-    // Method 3: Check WebGL renderer (Apple Silicon GPUs identify themselves)
-    try {
-      const canvas = document.createElement('canvas');
-      const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
-      if (gl) {
-        const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
-        if (debugInfo) {
-          const renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
-          if (/Apple M[1-9]/.test(renderer)) return true;
-        }
-      }
-    } catch (e) {}
+    // Method 3: Check for ARM in userAgent (some browsers expose this)
+    if (/\bARM\b|Apple Silicon/i.test(navigator.userAgent)) return true;
 
     // Method 4: High core count + memory (typical of Apple Silicon)
     if (navigator.hardwareConcurrency >= 8 && (navigator.deviceMemory || 0) >= 8) return true;

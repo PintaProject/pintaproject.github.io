@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (noSnapNoAppstreamDistros.some(distro => lowerUA.includes(distro))) {
         return {
           os: "flatpak",
-          link: "https://flathub.org/apps/org.pinta.Pinta"
+          link: "https://flathub.org/apps/com.github.PintaProject.Pinta"
         };
       }
 

@@ -36,24 +36,67 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("🔍 User Agent:", userAgent);
     console.log("🔍 Platform:", platform);
 
+    // 1. Windows
     if (/Windows NT/i.test(userAgent)) return { os: "windows", linkKey: "download_win" };
+
+    // 2. macOS
     if (/Mac OS X|Macintosh|Mac_PowerPC/i.test(userAgent) || /MacIntel/i.test(platform)) {
-      // Check for Apple Silicon Macs
       if (isAppleSilicon()) {
         return { os: "macos", linkKey: "download_macosarm64" };
       }
       return { os: "macos", linkKey: "download_osx" };
     }
-    if (/OpenBSD/i.test(userAgent)) return { os: "openbsd", linkKey: "download_openbsd" };
-    if (/Ubuntu|Debian/i.test(userAgent)) return { os: "ubuntu", link: "https://snapcraft.io/pinta" };
-    if (/Android/i.test(userAgent)) return { os: "generic" };
-    if (/Linux/i.test(userAgent) && !/Android/i.test(userAgent))
-      return { os: "flatpak", link: "appstream:com.github.PintaProject.Pinta" };
-    if (/iPhone|iPad|iPod/i.test(userAgent)) return { os: "github" };
-    if (window.innerWidth <= 768) return { os: "generic" }; // Default for mobile fallback
 
-    return { os: "github" }; // Default fallback to GitHub
+    // 3. OpenBSD
+    if (/OpenBSD/i.test(userAgent)) return { os: "openbsd", linkKey: "download_openbsd" };
+
+    // 4. Android
+    if (/Android/i.test(userAgent)) return { os: "generic" };
+
+    // 5. iOS
+    if (/iPhone|iPad|iPod/i.test(userAgent)) return { os: "github" };
+
+    // 6. Linux Desktop Distros lacking snap/appstream support
+    if (/Linux/i.test(userAgent) && !/Android/i.test(userAgent)) {
+      const lowerUA = userAgent.toLowerCase();
+
+      const noSnapNoAppstreamDistros = [
+        "linux mint",
+        "arch",
+        "endeavouros",
+        "artix",
+        "void"
+      ];
+
+      if (noSnapNoAppstreamDistros.some(distro => lowerUA.includes(distro))) {
+        return {
+          os: "flatpak",
+          link: "https://flathub.org/apps/org.pinta.Pinta"
+        };
+      }
+
+      // Ubuntu/Debian with Snap support
+      if (/Ubuntu|Debian/i.test(userAgent)) {
+        return {
+          os: "ubuntu",
+          link: "https://snapcraft.io/pinta"
+        };
+      }
+
+      // Default for other Linux distros: use appstream (likely GNOME/KDE)
+      return {
+        os: "flatpak",
+        link: "appstream:com.github.PintaProject.Pinta"
+      };
+    }
+
+    // 7. Mobile viewport fallback
+    if (window.innerWidth <= 768) return { os: "generic" };
+
+    // 8. Default fallback
+    return { os: "github" };
   }
+
 
   function updateDownloadButton(config) {
     const downloadButton = document.getElementById("download-button");

@@ -116,13 +116,21 @@
           <li>At the top right input box, type in: <strong>Pinta</strong> and press <strong>Enter</strong>.</li>
           <li>Pinta is displayed in the list below. Click on it and click the <strong>Install</strong> button.</li>
         </ul>
-        <p>But Pinta from the default Ubuntu repository can be an old version, so you may want to install a more recent version of Pinta from the Pinta maintainers PPA repository. See below.</p>
-        <h3>Install Pinta from Pinta Maintainers PPA Repository Using Terminal (for Advanced Users)</h3>
+        <p>But Pinta from the default Ubuntu repository can be not be up to
+          date, so you may want to install a more recent version of Pinta from
+          the <a href="https://xtradeb.net" target="_blank">XtraDeb</a> repository.
+          See below.
+        </p>
+        <h3>Install Pinta from XtraDeb Repository Using Terminal (for Advanced Users)</h3>
         <p>Open terminal with <strong>CTRL+ALT+T</strong></p>
-        <p>First, install the latest version of Mono (version 6.10 or higher is strongly recommended).</p>
-        <p>Add Pinta stable PPA repository:</p>
-        <pre><code>sudo add-apt-repository ppa:pinta-maintainers/pinta-stable</code></pre>
-        <p><strong>Note:</strong> Instead of <code>pinta-stable</code> you can add <code>pinta-daily</code> if you like to test the latest and greatest Pinta, but it may be buggy.</p>
+        <p>Add the XtraDeb repository:</p>
+        <pre>
+          <code>
+            wget https://launchpad.net/~xtradeb/+archive/ubuntu/apps/+files/xtradeb-apt-source_0.4_all.deb
+            sudo apt install ./xtradeb-apt-source_0.4_all.deb
+            rm ./xtradeb-apt-source_0.4_all.deb
+          </code>
+        </pre>
         <p>Update system package lists:</p>
         <pre><code>sudo apt-get update</code></pre>
         <p>Install Pinta:</p>

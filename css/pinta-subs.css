@@ -181,7 +181,7 @@
 
 .pinta-docs ul {
   padding: 0 1.35% .75% 7.36%;
-  margin: 25px;
+  margin: 10px 25px;
 }
 
 .pinta-docs ul ul {
@@ -190,7 +190,7 @@
 }
 
 .pinta-docs ul li {
-  font-size: 28px;
+  font-size: var(--pinta-font-size);
 }
 
 .pinta-docs strong {
